@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+audio/*.mp3
+audio/render-manifest.json
+!audio/.gitkeep
