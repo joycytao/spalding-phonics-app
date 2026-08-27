@@ -19,3 +19,6 @@
 - name: "status: pending review"
   color: "fbca04"
   description: "Waiting for review or triage"
+- name: "status: ready to pickup"
+  color: "0e8a16"
+  description: "Approved and ready for an agent to pick up"

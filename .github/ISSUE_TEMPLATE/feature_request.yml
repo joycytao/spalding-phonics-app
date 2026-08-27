@@ -3,6 +3,7 @@ description: Suggest an improvement with a clear user need and expected outcome.
 title: "[Feature]: "
 labels:
   - "type: feature"
+  - "status: pending review"
 body:
   - type: textarea
     id: use_case
