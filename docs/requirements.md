@@ -43,9 +43,11 @@ V1 stores review-queue entries and completed session summaries in browser-local 
 
 Audio is generated during authoring with Voicebox and bundled as local MP3 files. The user-facing app only plays the approved local file; it does not require Voicebox or Codex on the learner's device. A generation helper accepts the narration in the phonogram data and calls the Voicebox local API. If an audio file is missing or fails to play, the app shows a clear error and retains the current card.
 
+Each transcript record must preserve both structured instructional cues and a final approved `ttsText`. Cues include letter count, use restriction, or position, such as `two letters`, `not used`, and `beginning`. The `ttsText` is the only text sent to Voicebox and must combine the phonogram, cues, sounds, and examples in the approved teaching order. For example: `K N. Two letters. /n/ as in knee. Beginning.` Structured cues support review and future UI display; they must not replace the approved narration.
+
 ## Curriculum Data And Sources
 
-Each dataset record includes its number, displayed phonogram, curriculum group, narration text, source URL, and MP3 path. Curriculum data is compiled from public references and must be reviewed for instructional accuracy before audio files are considered final.
+Each dataset record includes its number, displayed phonogram, curriculum group, structured instructional cues, final narration text, source URL, and MP3 path. Curriculum data is compiled from public references and must be reviewed for instructional accuracy before audio files are considered final.
 
 Sources to record with the data:
 
