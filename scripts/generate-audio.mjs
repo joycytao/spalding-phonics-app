@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { phonograms } from '../src/phonograms.js';
-import { createGenerationRequest } from '../src/voicebox-request.js';
+import { createPhonogramGenerationRequest } from '../src/voicebox-request.js';
 
 const baseUrl = process.env.VOICEBOX_URL ?? 'http://127.0.0.1:17493';
 const profileId = process.env.VOICEBOX_PROFILE_ID;
@@ -16,7 +16,7 @@ for (const item of phonograms) {
   const response = await fetch(`${baseUrl}/generate`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify(createGenerationRequest(profileId, item.narration))
+    body: JSON.stringify(createPhonogramGenerationRequest(profileId, item))
   });
 
   if (!response.ok) {
