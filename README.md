@@ -26,10 +26,12 @@ VOICEBOX_PROFILE_ID="your-profile-id" node scripts/generate-audio.mjs
 
 The helper submits each narration to Voicebox, polls its asynchronous generation result, downloads the finished audio, and writes it into `audio/`. Listen to and approve every result before distributing the app. The request and download flow follow the [Voicebox API documentation](https://github.com/jamiepine/voicebox#api).
 
-Audio content for advanced phonograms is marked for instructional review in `src/phonograms.js` before release.
+Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
 ## Transcript Data Contract
 
-Transcript records live in `src/phonogram-transcripts.js` and are validated when imported. Each record includes the curriculum ID, symbol, group, structured `cuePhrases`, approved `ttsText`, examples, source URL, review status, and local MP3 path. Allowed review statuses are `pending_approval`, `approved`, `needs_revision`, and `blocked`.
+The ordered transcript skeleton lives in `data/phonogram-transcript.json`. It contains all 87 curriculum records with fixed IDs, symbols, groups, local MP3 paths, placeholder narration, and `pending_approval` review status. Runtime validation and reviewed transcript overlays live in `src/phonogram-transcripts.js`.
+
+Each record includes the curriculum ID, symbol, group, structured `cuePhrases`, approved `ttsText`, examples, source URL, review status, and local MP3 path. Allowed review statuses are `pending_approval`, `approved`, `needs_revision`, and `blocked`.
 
 Keep structured cues, such as `two letters`, `not used`, and `beginning`, separate from the final `ttsText`. The batch audio helper sends only `ttsText` to Voicebox.
