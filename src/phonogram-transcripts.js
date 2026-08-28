@@ -24,48 +24,8 @@ export const TRANSCRIPT_SCHEMA = {
   audioPath: 'string: local MP3 path'
 };
 
-const reviewedTranscripts = {
-  ew: {
-    cuePhrases: {
-      letterCount: 'two letters',
-      sounds: ['/oo/', '/yoo/']
-    },
-    examples: [
-      { sound: '/oo/', word: 'grew' },
-      { sound: '/yoo/', word: 'new' }
-    ],
-    ttsText: 'E W. Two letters. /oo/ as in grew. /yoo/ as in new.',
-    reviewStatus: 'approved'
-  },
-  kn: {
-    cuePhrases: {
-      letterCount: 'two letters',
-      position: 'beginning',
-      sounds: ['/n/']
-    },
-    examples: [{ sound: '/n/', word: 'knee' }],
-    ttsText: 'K N. Two letters. /n/ as in knee. Beginning.',
-    reviewStatus: 'approved'
-  },
-  wr: {
-    cuePhrases: {
-      letterCount: 'two letters',
-      useRestriction: 'not used',
-      position: 'beginning',
-      sounds: ['/r/']
-    },
-    examples: [{ sound: '/r/', word: 'write' }],
-    ttsText: 'W R. Two letters. /r/ as in write. Not used at the end of a word. Beginning.',
-    reviewStatus: 'pending_approval'
-  }
-};
-
 function buildTranscript(record) {
-  const override = reviewedTranscripts[record.symbol] ?? {};
-  return {
-    ...record,
-    ...override
-  };
+  return record;
 }
 
 export function validateTranscriptCatalog(transcripts) {

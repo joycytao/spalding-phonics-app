@@ -65,7 +65,7 @@ test('ew and kn transcripts keep cues separate from approved Voicebox text', () 
     { sound: '/oo/', word: 'grew' },
     { sound: '/yoo/', word: 'new' }
   ]);
-  assert.equal(ew.ttsText, 'E W. Two letters. /oo/ as in grew. /yoo/ as in new.');
+  assert.equal(ew.ttsText, 'E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
 
   assert.equal(kn.cuePhrases.letterCount, 'two letters');
   assert.equal(kn.cuePhrases.position, 'beginning');
@@ -77,8 +77,72 @@ test('published phonograms use approved ttsText as narration', () => {
   const ew = phonograms.find((item) => item.symbol === 'ew');
   const kn = phonograms.find((item) => item.symbol === 'kn');
 
-  assert.equal(ew.narration, 'E W. Two letters. /oo/ as in grew. /yoo/ as in new.');
+  assert.equal(ew.narration, 'E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
   assert.equal(kn.narration, 'K N. Two letters. /n/ as in knee. Beginning.');
+});
+
+test('known narrations are migrated into the canonical transcript records', () => {
+  const expected = {
+    a: {
+      sounds: ['/ă/', '/ā/', '/ah/'],
+      examples: [
+        { sound: '/ă/', word: 'apple' },
+        { sound: '/ā/', word: 'apron' },
+        { sound: '/ah/', word: 'father' }
+      ]
+    },
+    th: {
+      sounds: ['/th/', '/th/'],
+      examples: [
+        { sound: '/th/', word: 'thin' },
+        { sound: '/th/', word: 'this' }
+      ]
+    },
+    oo: {
+      sounds: ['/oo/', '/oo/'],
+      examples: [
+        { sound: '/oo/', word: 'moon' },
+        { sound: '/oo/', word: 'book' }
+      ]
+    },
+    ew: {
+      sounds: ['/oo/', '/yoo/'],
+      examples: [
+        { sound: '/oo/', word: 'grew' },
+        { sound: '/yoo/', word: 'new' }
+      ]
+    },
+    ui: {
+      sounds: ['/oo/', '/yoo/'],
+      examples: [
+        { sound: '/oo/', word: 'fruit' },
+        { sound: '/yoo/', word: 'suit' }
+      ]
+    },
+    ough: {
+      sounds: ['/ō/', '/oo/', '/ŭf/', '/ŏf/', '/aw/', '/ow/'],
+      examples: [
+        { sound: '/ō/', word: 'though' },
+        { sound: '/oo/', word: 'through' },
+        { sound: '/ŭf/', word: 'rough' },
+        { sound: '/ŏf/', word: 'cough' },
+        { sound: '/aw/', word: 'thought' },
+        { sound: '/ow/', word: 'bough' }
+      ]
+    },
+    wr: {
+      sounds: ['/r/'],
+      examples: [{ sound: '/r/', word: 'write' }]
+    }
+  };
+
+  for (const [symbol, details] of Object.entries(expected)) {
+    const transcript = phonogramTranscripts.find((item) => item.symbol === symbol);
+    assert.deepEqual(transcript.cuePhrases.sounds, details.sounds);
+    assert.deepEqual(transcript.examples, details.examples);
+    assert.equal(transcript.reviewStatus, 'pending_approval');
+    assert.doesNotMatch(transcript.ttsText, /Listen for this phonogram sound/);
+  }
 });
 
 test('validateTranscriptCatalog rejects missing required fields and invalid statuses', () => {
