@@ -7,6 +7,7 @@ import {
   validateTranscriptCatalog
 } from '../src/phonogram-transcripts.js';
 import { phonograms } from '../src/phonograms.js';
+import reviewSamples from '../data/transcript-review-samples.json' with { type: 'json' };
 
 const transcriptSkeleton = JSON.parse(
   readFileSync(new URL('../data/phonogram-transcript.json', import.meta.url), 'utf8')
@@ -216,4 +217,23 @@ test('validateTranscriptCatalog rejects duplicate symbols and unstable ordering'
     () => validateTranscriptCatalog([{ ...first, audioPath: 'audio/a.mp3' }]),
     /Transcript 1 audioPath must be "audio\/01-a\.mp3"/
   );
+});
+
+test('representative transcript review package covers the requested categories', () => {
+  assert.deepEqual(reviewSamples.sampleSymbols, ['a', 'th', 'oo', 'ew', 'ough']);
+  assert.equal(reviewSamples.samples.length, 5);
+  assert.deepEqual(reviewSamples.conventionDecisions, [
+    'symbol naming',
+    'phonetic notation',
+    'example words',
+    'pause placement'
+  ]);
+
+  for (const sample of reviewSamples.samples) {
+    assert.ok(sample.id >= 1 && sample.id <= 87);
+    assert.ok(sample.ttsText.length > 0);
+    assert.ok(sample.examples.length > 0);
+    assert.equal(sample.reviewStatus, 'pending_approval');
+    assert.ok(sample.reviewQuestions.length > 0);
+  }
 });

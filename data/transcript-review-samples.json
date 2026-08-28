@@ -1,0 +1,120 @@
+{
+  "title": "Representative phonogram transcript review samples",
+  "purpose": "Calibrate narration conventions before reviewing the complete curriculum.",
+  "sampleSymbols": ["a", "th", "oo", "ew", "ough"],
+  "conventionDecisions": [
+    "symbol naming",
+    "phonetic notation",
+    "example words",
+    "pause placement"
+  ],
+  "samples": [
+    {
+      "id": 1,
+      "symbol": "a",
+      "group": "single",
+      "cuePhrases": {"sounds": ["/ă/", "/ā/", "/ah/"]},
+      "ttsText": "A. /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+      "examples": [
+        {"sound": "/ă/", "word": "apple"},
+        {"sound": "/ā/", "word": "apron"},
+        {"sound": "/ah/", "word": "father"}
+      ],
+      "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+      "reviewStatus": "pending_approval",
+      "audioPath": "audio/01-a.mp3",
+      "reviewQuestions": [
+        "Should the single-letter symbol be spoken as the letter name before its sounds?",
+        "Are all three sound notations and examples instructionally accurate?",
+        "Should pauses separate each sound/example pair?"
+      ]
+    },
+    {
+      "id": 29,
+      "symbol": "th",
+      "group": "multi",
+      "cuePhrases": {"letterCount": "two letters", "sounds": ["/th/", "/th/"]},
+      "ttsText": "T H. Two letters. /th/ as in thin. /th/ as in this.",
+      "examples": [
+        {"sound": "/th/", "word": "thin"},
+        {"sound": "/th/", "word": "this"}
+      ],
+      "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+      "reviewStatus": "pending_approval",
+      "audioPath": "audio/29-th.mp3",
+      "reviewQuestions": [
+        "How should the voiced and unvoiced th sounds be distinguished in notation?",
+        "Is saying each letter name and then the two examples clear at the target pace?",
+        "Should a pause occur between the two sound/example pairs?"
+      ]
+    },
+    {
+      "id": 32,
+      "symbol": "oo",
+      "group": "multi",
+      "cuePhrases": {"letterCount": "two letters", "sounds": ["/oo/", "/oo/"]},
+      "ttsText": "O O. Two letters. /oo/ as in moon. /oo/ as in book.",
+      "examples": [
+        {"sound": "/oo/", "word": "moon"},
+        {"sound": "/oo/", "word": "book"}
+      ],
+      "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+      "reviewStatus": "pending_approval",
+      "audioPath": "audio/32-oo.mp3",
+      "reviewQuestions": [
+        "Should the two oo sounds use distinct phonetic notation?",
+        "Are moon and book the right contrastive examples for review?",
+        "Is the pause between the two examples long enough for repetition?"
+      ]
+    },
+    {
+      "id": 52,
+      "symbol": "ew",
+      "group": "multi",
+      "cuePhrases": {
+        "letterCount": "two letters",
+        "useRestriction": "used at the end of a word",
+        "sounds": ["/oo/", "/yoo/"]
+      },
+      "ttsText": "E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
+      "examples": [
+        {"sound": "/oo/", "word": "grew"},
+        {"sound": "/yoo/", "word": "new"}
+      ],
+      "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+      "reviewStatus": "pending_approval",
+      "audioPath": "audio/52-ew.mp3",
+      "reviewQuestions": [
+        "Are /oo/ and /yoo/ clearly differentiated in the recorded wording?",
+        "Should the end-of-word restriction follow the examples or precede them?",
+        "Does the restriction need a longer pause for emphasis?"
+      ]
+    },
+    {
+      "id": 57,
+      "symbol": "ough",
+      "group": "multi",
+      "cuePhrases": {
+        "letterCount": "four letters",
+        "sounds": ["/ō/", "/oo/", "/ŭf/", "/ŏf/", "/aw/", "/ow/"]
+      },
+      "ttsText": "O U G H. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+      "examples": [
+        {"sound": "/ō/", "word": "though"},
+        {"sound": "/oo/", "word": "through"},
+        {"sound": "/ŭf/", "word": "rough"},
+        {"sound": "/ŏf/", "word": "cough"},
+        {"sound": "/aw/", "word": "thought"},
+        {"sound": "/ow/", "word": "bough"}
+      ],
+      "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+      "reviewStatus": "pending_approval",
+      "audioPath": "audio/57-ough.mp3",
+      "reviewQuestions": [
+        "Are all six sound notations and examples accurate and intelligible?",
+        "Should this long multi-sound record use a pause after every example?",
+        "Is the final bough example clear enough to distinguish /ow/?"
+      ]
+    }
+  ]
+}
