@@ -30,7 +30,7 @@ Transcript content that still needs instructional review is marked in `data/phon
 
 ## Transcript Data Contract
 
-The ordered transcript catalog lives in `data/phonogram-transcript.json`. It contains all 87 curriculum records with fixed IDs, symbols, groups, local MP3 paths, migrated known narrations, and review status. Runtime validation lives in `src/phonogram-transcripts.js`; the JSON file is the canonical source for transcript content.
+The ordered transcript catalog lives in `data/phonogram-transcript.json`. It contains all 87 curriculum records with fixed IDs, symbols, groups, local MP3 paths, draft or migrated narration, examples, and review status. Runtime validation lives in `src/phonogram-transcripts.js`; the JSON file is the canonical source for transcript content.
 
 Each record includes the curriculum ID, symbol, group, structured `cuePhrases`, approved `ttsText`, examples, source URL, review status, and local MP3 path. Allowed review statuses are `pending_approval`, `approved`, `needs_revision`, and `blocked`.
 

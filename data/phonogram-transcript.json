@@ -1,89 +1,1729 @@
 [
-  {"id":1,"symbol":"a","group":"single","cuePhrases":{"sounds":["/ă/","/ā/","/ah/"]},"ttsText":"A. /ă/ as in apple. /ā/ as in apron. /ah/ as in father.","examples":[{"sound":"/ă/","word":"apple"},{"sound":"/ā/","word":"apron"},{"sound":"/ah/","word":"father"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/01-a.mp3"},
-  {"id":2,"symbol":"c","group":"single","cuePhrases":{},"ttsText":"C. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/02-c.mp3"},
-  {"id":3,"symbol":"d","group":"single","cuePhrases":{},"ttsText":"D. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/03-d.mp3"},
-  {"id":4,"symbol":"f","group":"single","cuePhrases":{},"ttsText":"F. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/04-f.mp3"},
-  {"id":5,"symbol":"g","group":"single","cuePhrases":{},"ttsText":"G. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/05-g.mp3"},
-  {"id":6,"symbol":"o","group":"single","cuePhrases":{},"ttsText":"O. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/06-o.mp3"},
-  {"id":7,"symbol":"s","group":"single","cuePhrases":{},"ttsText":"S. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/07-s.mp3"},
-  {"id":8,"symbol":"qu","group":"single","cuePhrases":{},"ttsText":"Q U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/08-qu.mp3"},
-  {"id":9,"symbol":"b","group":"single","cuePhrases":{},"ttsText":"B. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/09-b.mp3"},
-  {"id":10,"symbol":"e","group":"single","cuePhrases":{},"ttsText":"E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/10-e.mp3"},
-  {"id":11,"symbol":"h","group":"single","cuePhrases":{},"ttsText":"H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/11-h.mp3"},
-  {"id":12,"symbol":"i","group":"single","cuePhrases":{},"ttsText":"I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/12-i.mp3"},
-  {"id":13,"symbol":"j","group":"single","cuePhrases":{},"ttsText":"J. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/13-j.mp3"},
-  {"id":14,"symbol":"k","group":"single","cuePhrases":{},"ttsText":"K. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/14-k.mp3"},
-  {"id":15,"symbol":"l","group":"single","cuePhrases":{},"ttsText":"L. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/15-l.mp3"},
-  {"id":16,"symbol":"m","group":"single","cuePhrases":{},"ttsText":"M. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/16-m.mp3"},
-  {"id":17,"symbol":"n","group":"single","cuePhrases":{},"ttsText":"N. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/17-n.mp3"},
-  {"id":18,"symbol":"p","group":"single","cuePhrases":{},"ttsText":"P. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/18-p.mp3"},
-  {"id":19,"symbol":"r","group":"single","cuePhrases":{},"ttsText":"R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/19-r.mp3"},
-  {"id":20,"symbol":"t","group":"single","cuePhrases":{},"ttsText":"T. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/20-t.mp3"},
-  {"id":21,"symbol":"u","group":"single","cuePhrases":{},"ttsText":"U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/21-u.mp3"},
-  {"id":22,"symbol":"v","group":"single","cuePhrases":{},"ttsText":"V. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/22-v.mp3"},
-  {"id":23,"symbol":"w","group":"single","cuePhrases":{},"ttsText":"W. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/23-w.mp3"},
-  {"id":24,"symbol":"x","group":"single","cuePhrases":{},"ttsText":"X. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/24-x.mp3"},
-  {"id":25,"symbol":"y","group":"single","cuePhrases":{},"ttsText":"Y. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/25-y.mp3"},
-  {"id":26,"symbol":"z","group":"single","cuePhrases":{},"ttsText":"Z. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/26-z.mp3"},
-  {"id":27,"symbol":"sh","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"S H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/27-sh.mp3"},
-  {"id":28,"symbol":"ee","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/28-ee.mp3"},
-  {"id":29,"symbol":"th","group":"multi","cuePhrases":{"letterCount":"two letters","sounds":["/th/","/th/"]},"ttsText":"T H. Two letters. /th/ as in thin. /th/ as in this.","examples":[{"sound":"/th/","word":"thin"},{"sound":"/th/","word":"this"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/29-th.mp3"},
-  {"id":30,"symbol":"ow","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O W. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/30-ow.mp3"},
-  {"id":31,"symbol":"ou","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/31-ou.mp3"},
-  {"id":32,"symbol":"oo","group":"multi","cuePhrases":{"letterCount":"two letters","sounds":["/oo/","/oo/"]},"ttsText":"O O. Two letters. /oo/ as in moon. /oo/ as in book.","examples":[{"sound":"/oo/","word":"moon"},{"sound":"/oo/","word":"book"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/32-oo.mp3"},
-  {"id":33,"symbol":"ch","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"C H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/33-ch.mp3"},
-  {"id":34,"symbol":"ar","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"A R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/34-ar.mp3"},
-  {"id":35,"symbol":"ay","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"A Y. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/35-ay.mp3"},
-  {"id":36,"symbol":"ai","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"A I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/36-ai.mp3"},
-  {"id":37,"symbol":"oy","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O Y. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/37-oy.mp3"},
-  {"id":38,"symbol":"oi","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/38-oi.mp3"},
-  {"id":39,"symbol":"er","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/39-er.mp3"},
-  {"id":40,"symbol":"ir","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"I R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/40-ir.mp3"},
-  {"id":41,"symbol":"ur","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"U R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/41-ur.mp3"},
-  {"id":42,"symbol":"wor","group":"multi","cuePhrases":{"letterCount":"3 letters"},"ttsText":"W O R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/42-wor.mp3"},
-  {"id":43,"symbol":"ear","group":"multi","cuePhrases":{"letterCount":"3 letters"},"ttsText":"E A R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/43-ear.mp3"},
-  {"id":44,"symbol":"ng","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"N G. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/44-ng.mp3"},
-  {"id":45,"symbol":"ea","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E A. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/45-ea.mp3"},
-  {"id":46,"symbol":"aw","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"A W. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/46-aw.mp3"},
-  {"id":47,"symbol":"au","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"A U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/47-au.mp3"},
-  {"id":48,"symbol":"or","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/48-or.mp3"},
-  {"id":49,"symbol":"ck","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"C K. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/49-ck.mp3"},
-  {"id":50,"symbol":"wh","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"W H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/50-wh.mp3"},
-  {"id":51,"symbol":"ed","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E D. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/51-ed.mp3"},
-  {"id":52,"symbol":"ew","group":"multi","cuePhrases":{"letterCount":"two letters","useRestriction":"used at the end of a word","sounds":["/oo/","/yoo/"]},"ttsText":"E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.","examples":[{"sound":"/oo/","word":"grew"},{"sound":"/yoo/","word":"new"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/52-ew.mp3"},
-  {"id":53,"symbol":"ui","group":"multi","cuePhrases":{"letterCount":"two letters","useRestriction":"not used at the end of a word","sounds":["/oo/","/yoo/"]},"ttsText":"U I. Two letters. /oo/ as in fruit. /yoo/ as in suit. Not used at the end of a word.","examples":[{"sound":"/oo/","word":"fruit"},{"sound":"/yoo/","word":"suit"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/53-ui.mp3"},
-  {"id":54,"symbol":"oa","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O A. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/54-oa.mp3"},
-  {"id":55,"symbol":"gu","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"G U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/55-gu.mp3"},
-  {"id":56,"symbol":"ph","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"P H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/56-ph.mp3"},
-  {"id":57,"symbol":"ough","group":"multi","cuePhrases":{"letterCount":"four letters","sounds":["/ō/","/oo/","/ŭf/","/ŏf/","/aw/","/ow/"]},"ttsText":"O U G H. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.","examples":[{"sound":"/ō/","word":"though"},{"sound":"/oo/","word":"through"},{"sound":"/ŭf/","word":"rough"},{"sound":"/ŏf/","word":"cough"},{"sound":"/aw/","word":"thought"},{"sound":"/ow/","word":"bough"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/57-ough.mp3"},
-  {"id":58,"symbol":"oe","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"O E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/58-oe.mp3"},
-  {"id":59,"symbol":"ey","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E Y. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/59-ey.mp3"},
-  {"id":60,"symbol":"igh","group":"multi","cuePhrases":{"letterCount":"3 letters"},"ttsText":"I G H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/60-igh.mp3"},
-  {"id":61,"symbol":"kn","group":"multi","cuePhrases":{"letterCount":"two letters","position":"beginning","sounds":["/n/"]},"ttsText":"K N. Two letters. /n/ as in knee. Beginning.","examples":[{"sound":"/n/","word":"knee"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/61-kn.mp3"},
-  {"id":62,"symbol":"gn","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"G N. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/62-gn.mp3"},
-  {"id":63,"symbol":"wr","group":"multi","cuePhrases":{"letterCount":"two letters","useRestriction":"not used at the end of a word","position":"beginning","sounds":["/r/"]},"ttsText":"W R. Two letters. /r/ as in write. Not used at the end of a word. Beginning.","examples":[{"sound":"/r/","word":"write"}],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/63-wr.mp3"},
-  {"id":64,"symbol":"ie","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"I E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/64-ie.mp3"},
-  {"id":65,"symbol":"dge","group":"multi","cuePhrases":{"letterCount":"3 letters"},"ttsText":"D G E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/65-dge.mp3"},
-  {"id":66,"symbol":"ei","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/66-ei.mp3"},
-  {"id":67,"symbol":"eigh","group":"multi","cuePhrases":{"letterCount":"4 letters"},"ttsText":"E I G H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/67-eigh.mp3"},
-  {"id":68,"symbol":"ti","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"T I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/68-ti.mp3"},
-  {"id":69,"symbol":"si","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"S I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/69-si.mp3"},
-  {"id":70,"symbol":"ci","group":"multi","cuePhrases":{"letterCount":"2 letters"},"ttsText":"C I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/70-ci.mp3"},
-  {"id":71,"symbol":"sci","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"S C I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/71-sci.mp3"},
-  {"id":72,"symbol":"our","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"O U R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/72-our.mp3"},
-  {"id":73,"symbol":"eu","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"E U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/73-eu.mp3"},
-  {"id":74,"symbol":"augh","group":"advanced","cuePhrases":{"letterCount":"4 letters"},"ttsText":"A U G H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/74-augh.mp3"},
-  {"id":75,"symbol":"gh","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"G H. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/75-gh.mp3"},
-  {"id":76,"symbol":"que","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"Q U E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/76-que.mp3"},
-  {"id":77,"symbol":"bu","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"B U. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/77-bu.mp3"},
-  {"id":78,"symbol":"lk","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"L K. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/78-lk.mp3"},
-  {"id":79,"symbol":"mb","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"M B. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/79-mb.mp3"},
-  {"id":80,"symbol":"mn","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"M N. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/80-mn.mp3"},
-  {"id":81,"symbol":"st","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"S T. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/81-st.mp3"},
-  {"id":82,"symbol":"the","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"T H E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/82-the.mp3"},
-  {"id":83,"symbol":"arr","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"A R R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/83-arr.mp3"},
-  {"id":84,"symbol":"err","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"E R R. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/84-err.mp3"},
-  {"id":85,"symbol":"ssi","group":"advanced","cuePhrases":{"letterCount":"3 letters"},"ttsText":"S S I. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/85-ssi.mp3"},
-  {"id":86,"symbol":"te","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"T E. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/86-te.mp3"},
-  {"id":87,"symbol":"dg","group":"advanced","cuePhrases":{"letterCount":"2 letters"},"ttsText":"D G. Listen for this phonogram sound.","examples":[],"source":"https://valleyacademy.com/parents/student-resources/phonogram-helper/","reviewStatus":"pending_approval","audioPath":"audio/87-dg.mp3"}
+  {
+    "id": 1,
+    "symbol": "a",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/ă/",
+        "/ā/",
+        "/ah/"
+      ]
+    },
+    "ttsText": "A. /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+    "examples": [
+      {
+        "sound": "/ă/",
+        "word": "apple"
+      },
+      {
+        "sound": "/ā/",
+        "word": "apron"
+      },
+      {
+        "sound": "/ah/",
+        "word": "father"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/01-a.mp3"
+  },
+  {
+    "id": 2,
+    "symbol": "c",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/c/"
+      ]
+    },
+    "ttsText": "C. /c/ as in cat.",
+    "examples": [
+      {
+        "sound": "/c/",
+        "word": "cat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/02-c.mp3"
+  },
+  {
+    "id": 3,
+    "symbol": "d",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/d/"
+      ]
+    },
+    "ttsText": "D. /d/ as in dog.",
+    "examples": [
+      {
+        "sound": "/d/",
+        "word": "dog"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/03-d.mp3"
+  },
+  {
+    "id": 4,
+    "symbol": "f",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/f/"
+      ]
+    },
+    "ttsText": "F. /f/ as in fish.",
+    "examples": [
+      {
+        "sound": "/f/",
+        "word": "fish"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/04-f.mp3"
+  },
+  {
+    "id": 5,
+    "symbol": "g",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/g/"
+      ]
+    },
+    "ttsText": "G. /g/ as in gum.",
+    "examples": [
+      {
+        "sound": "/g/",
+        "word": "gum"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/05-g.mp3"
+  },
+  {
+    "id": 6,
+    "symbol": "o",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/o/"
+      ]
+    },
+    "ttsText": "O. /o/ as in octopus.",
+    "examples": [
+      {
+        "sound": "/o/",
+        "word": "octopus"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/06-o.mp3"
+  },
+  {
+    "id": 7,
+    "symbol": "s",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/s/"
+      ]
+    },
+    "ttsText": "S. /s/ as in sun.",
+    "examples": [
+      {
+        "sound": "/s/",
+        "word": "sun"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/07-s.mp3"
+  },
+  {
+    "id": 8,
+    "symbol": "qu",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/qu/"
+      ]
+    },
+    "ttsText": "Q U. /qu/ as in queen.",
+    "examples": [
+      {
+        "sound": "/qu/",
+        "word": "queen"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/08-qu.mp3"
+  },
+  {
+    "id": 9,
+    "symbol": "b",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/b/"
+      ]
+    },
+    "ttsText": "B. /b/ as in bat.",
+    "examples": [
+      {
+        "sound": "/b/",
+        "word": "bat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/09-b.mp3"
+  },
+  {
+    "id": 10,
+    "symbol": "e",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/e/"
+      ]
+    },
+    "ttsText": "E. /e/ as in egg.",
+    "examples": [
+      {
+        "sound": "/e/",
+        "word": "egg"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/10-e.mp3"
+  },
+  {
+    "id": 11,
+    "symbol": "h",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/h/"
+      ]
+    },
+    "ttsText": "H. /h/ as in hat.",
+    "examples": [
+      {
+        "sound": "/h/",
+        "word": "hat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/11-h.mp3"
+  },
+  {
+    "id": 12,
+    "symbol": "i",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/i/"
+      ]
+    },
+    "ttsText": "I. /i/ as in igloo.",
+    "examples": [
+      {
+        "sound": "/i/",
+        "word": "igloo"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/12-i.mp3"
+  },
+  {
+    "id": 13,
+    "symbol": "j",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/j/"
+      ]
+    },
+    "ttsText": "J. /j/ as in jam.",
+    "examples": [
+      {
+        "sound": "/j/",
+        "word": "jam"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/13-j.mp3"
+  },
+  {
+    "id": 14,
+    "symbol": "k",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/k/"
+      ]
+    },
+    "ttsText": "K. /k/ as in kite.",
+    "examples": [
+      {
+        "sound": "/k/",
+        "word": "kite"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/14-k.mp3"
+  },
+  {
+    "id": 15,
+    "symbol": "l",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/l/"
+      ]
+    },
+    "ttsText": "L. /l/ as in lamp.",
+    "examples": [
+      {
+        "sound": "/l/",
+        "word": "lamp"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/15-l.mp3"
+  },
+  {
+    "id": 16,
+    "symbol": "m",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/m/"
+      ]
+    },
+    "ttsText": "M. /m/ as in map.",
+    "examples": [
+      {
+        "sound": "/m/",
+        "word": "map"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/16-m.mp3"
+  },
+  {
+    "id": 17,
+    "symbol": "n",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/n/"
+      ]
+    },
+    "ttsText": "N. /n/ as in nest.",
+    "examples": [
+      {
+        "sound": "/n/",
+        "word": "nest"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/17-n.mp3"
+  },
+  {
+    "id": 18,
+    "symbol": "p",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/p/"
+      ]
+    },
+    "ttsText": "P. /p/ as in pig.",
+    "examples": [
+      {
+        "sound": "/p/",
+        "word": "pig"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/18-p.mp3"
+  },
+  {
+    "id": 19,
+    "symbol": "r",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/r/"
+      ]
+    },
+    "ttsText": "R. /r/ as in red.",
+    "examples": [
+      {
+        "sound": "/r/",
+        "word": "red"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/19-r.mp3"
+  },
+  {
+    "id": 20,
+    "symbol": "t",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/t/"
+      ]
+    },
+    "ttsText": "T. /t/ as in top.",
+    "examples": [
+      {
+        "sound": "/t/",
+        "word": "top"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/20-t.mp3"
+  },
+  {
+    "id": 21,
+    "symbol": "u",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/u/"
+      ]
+    },
+    "ttsText": "U. /u/ as in up.",
+    "examples": [
+      {
+        "sound": "/u/",
+        "word": "up"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/21-u.mp3"
+  },
+  {
+    "id": 22,
+    "symbol": "v",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/v/"
+      ]
+    },
+    "ttsText": "V. /v/ as in van.",
+    "examples": [
+      {
+        "sound": "/v/",
+        "word": "van"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/22-v.mp3"
+  },
+  {
+    "id": 23,
+    "symbol": "w",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/w/"
+      ]
+    },
+    "ttsText": "W. /w/ as in web.",
+    "examples": [
+      {
+        "sound": "/w/",
+        "word": "web"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/23-w.mp3"
+  },
+  {
+    "id": 24,
+    "symbol": "x",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/x/"
+      ]
+    },
+    "ttsText": "X. /x/ as in fox.",
+    "examples": [
+      {
+        "sound": "/x/",
+        "word": "fox"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/24-x.mp3"
+  },
+  {
+    "id": 25,
+    "symbol": "y",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/y/"
+      ]
+    },
+    "ttsText": "Y. /y/ as in yes.",
+    "examples": [
+      {
+        "sound": "/y/",
+        "word": "yes"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/25-y.mp3"
+  },
+  {
+    "id": 26,
+    "symbol": "z",
+    "group": "single",
+    "cuePhrases": {
+      "sounds": [
+        "/z/"
+      ]
+    },
+    "ttsText": "Z. /z/ as in zip.",
+    "examples": [
+      {
+        "sound": "/z/",
+        "word": "zip"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/26-z.mp3"
+  },
+  {
+    "id": 27,
+    "symbol": "sh",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/sh/"
+      ]
+    },
+    "ttsText": "S H. /sh/ as in ship.",
+    "examples": [
+      {
+        "sound": "/sh/",
+        "word": "ship"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/27-sh.mp3"
+  },
+  {
+    "id": 28,
+    "symbol": "ee",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ee/"
+      ]
+    },
+    "ttsText": "E E. /ee/ as in feet.",
+    "examples": [
+      {
+        "sound": "/ee/",
+        "word": "feet"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/28-ee.mp3"
+  },
+  {
+    "id": 29,
+    "symbol": "th",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "sounds": [
+        "/th/",
+        "/th/"
+      ]
+    },
+    "ttsText": "T H. Two letters. /th/ as in thin. /th/ as in this.",
+    "examples": [
+      {
+        "sound": "/th/",
+        "word": "thin"
+      },
+      {
+        "sound": "/th/",
+        "word": "this"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/29-th.mp3"
+  },
+  {
+    "id": 30,
+    "symbol": "ow",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ow/"
+      ]
+    },
+    "ttsText": "O W. /ow/ as in cow.",
+    "examples": [
+      {
+        "sound": "/ow/",
+        "word": "cow"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/30-ow.mp3"
+  },
+  {
+    "id": 31,
+    "symbol": "ou",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ou/"
+      ]
+    },
+    "ttsText": "O U. /ou/ as in out.",
+    "examples": [
+      {
+        "sound": "/ou/",
+        "word": "out"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/31-ou.mp3"
+  },
+  {
+    "id": 32,
+    "symbol": "oo",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "sounds": [
+        "/oo/",
+        "/oo/"
+      ]
+    },
+    "ttsText": "O O. Two letters. /oo/ as in moon. /oo/ as in book.",
+    "examples": [
+      {
+        "sound": "/oo/",
+        "word": "moon"
+      },
+      {
+        "sound": "/oo/",
+        "word": "book"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/32-oo.mp3"
+  },
+  {
+    "id": 33,
+    "symbol": "ch",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ch/"
+      ]
+    },
+    "ttsText": "C H. /ch/ as in chin.",
+    "examples": [
+      {
+        "sound": "/ch/",
+        "word": "chin"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/33-ch.mp3"
+  },
+  {
+    "id": 34,
+    "symbol": "ar",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ar/"
+      ]
+    },
+    "ttsText": "A R. /ar/ as in car.",
+    "examples": [
+      {
+        "sound": "/ar/",
+        "word": "car"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/34-ar.mp3"
+  },
+  {
+    "id": 35,
+    "symbol": "ay",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ay/"
+      ]
+    },
+    "ttsText": "A Y. /ay/ as in day.",
+    "examples": [
+      {
+        "sound": "/ay/",
+        "word": "day"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/35-ay.mp3"
+  },
+  {
+    "id": 36,
+    "symbol": "ai",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ai/"
+      ]
+    },
+    "ttsText": "A I. /ai/ as in rain.",
+    "examples": [
+      {
+        "sound": "/ai/",
+        "word": "rain"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/36-ai.mp3"
+  },
+  {
+    "id": 37,
+    "symbol": "oy",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/oy/"
+      ]
+    },
+    "ttsText": "O Y. /oy/ as in boy.",
+    "examples": [
+      {
+        "sound": "/oy/",
+        "word": "boy"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/37-oy.mp3"
+  },
+  {
+    "id": 38,
+    "symbol": "oi",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/oi/"
+      ]
+    },
+    "ttsText": "O I. /oi/ as in coin.",
+    "examples": [
+      {
+        "sound": "/oi/",
+        "word": "coin"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/38-oi.mp3"
+  },
+  {
+    "id": 39,
+    "symbol": "er",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/er/"
+      ]
+    },
+    "ttsText": "E R. /er/ as in her.",
+    "examples": [
+      {
+        "sound": "/er/",
+        "word": "her"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/39-er.mp3"
+  },
+  {
+    "id": 40,
+    "symbol": "ir",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ir/"
+      ]
+    },
+    "ttsText": "I R. /ir/ as in bird.",
+    "examples": [
+      {
+        "sound": "/ir/",
+        "word": "bird"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/40-ir.mp3"
+  },
+  {
+    "id": 41,
+    "symbol": "ur",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ur/"
+      ]
+    },
+    "ttsText": "U R. /ur/ as in turn.",
+    "examples": [
+      {
+        "sound": "/ur/",
+        "word": "turn"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/41-ur.mp3"
+  },
+  {
+    "id": 42,
+    "symbol": "wor",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "3 letters",
+      "sounds": [
+        "/wor/"
+      ]
+    },
+    "ttsText": "W O R. /wor/ as in word.",
+    "examples": [
+      {
+        "sound": "/wor/",
+        "word": "word"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/42-wor.mp3"
+  },
+  {
+    "id": 43,
+    "symbol": "ear",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "3 letters",
+      "sounds": [
+        "/ear/"
+      ]
+    },
+    "ttsText": "E A R. /ear/ as in hear.",
+    "examples": [
+      {
+        "sound": "/ear/",
+        "word": "hear"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/43-ear.mp3"
+  },
+  {
+    "id": 44,
+    "symbol": "ng",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ng/"
+      ]
+    },
+    "ttsText": "N G. /ng/ as in sing.",
+    "examples": [
+      {
+        "sound": "/ng/",
+        "word": "sing"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/44-ng.mp3"
+  },
+  {
+    "id": 45,
+    "symbol": "ea",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ea/"
+      ]
+    },
+    "ttsText": "E A. /ea/ as in eat.",
+    "examples": [
+      {
+        "sound": "/ea/",
+        "word": "eat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/45-ea.mp3"
+  },
+  {
+    "id": 46,
+    "symbol": "aw",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/aw/"
+      ]
+    },
+    "ttsText": "A W. /aw/ as in saw.",
+    "examples": [
+      {
+        "sound": "/aw/",
+        "word": "saw"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/46-aw.mp3"
+  },
+  {
+    "id": 47,
+    "symbol": "au",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/au/"
+      ]
+    },
+    "ttsText": "A U. /au/ as in haul.",
+    "examples": [
+      {
+        "sound": "/au/",
+        "word": "haul"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/47-au.mp3"
+  },
+  {
+    "id": 48,
+    "symbol": "or",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/or/"
+      ]
+    },
+    "ttsText": "O R. /or/ as in fork.",
+    "examples": [
+      {
+        "sound": "/or/",
+        "word": "fork"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/48-or.mp3"
+  },
+  {
+    "id": 49,
+    "symbol": "ck",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ck/"
+      ]
+    },
+    "ttsText": "C K. /ck/ as in back.",
+    "examples": [
+      {
+        "sound": "/ck/",
+        "word": "back"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/49-ck.mp3"
+  },
+  {
+    "id": 50,
+    "symbol": "wh",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/wh/"
+      ]
+    },
+    "ttsText": "W H. /wh/ as in when.",
+    "examples": [
+      {
+        "sound": "/wh/",
+        "word": "when"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/50-wh.mp3"
+  },
+  {
+    "id": 51,
+    "symbol": "ed",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ed/"
+      ]
+    },
+    "ttsText": "E D. /ed/ as in jumped.",
+    "examples": [
+      {
+        "sound": "/ed/",
+        "word": "jumped"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/51-ed.mp3"
+  },
+  {
+    "id": 52,
+    "symbol": "ew",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "useRestriction": "used at the end of a word",
+      "sounds": [
+        "/oo/",
+        "/yoo/"
+      ]
+    },
+    "ttsText": "E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
+    "examples": [
+      {
+        "sound": "/oo/",
+        "word": "grew"
+      },
+      {
+        "sound": "/yoo/",
+        "word": "new"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/52-ew.mp3"
+  },
+  {
+    "id": 53,
+    "symbol": "ui",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "useRestriction": "not used at the end of a word",
+      "sounds": [
+        "/oo/",
+        "/yoo/"
+      ]
+    },
+    "ttsText": "U I. Two letters. /oo/ as in fruit. /yoo/ as in suit. Not used at the end of a word.",
+    "examples": [
+      {
+        "sound": "/oo/",
+        "word": "fruit"
+      },
+      {
+        "sound": "/yoo/",
+        "word": "suit"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/53-ui.mp3"
+  },
+  {
+    "id": 54,
+    "symbol": "oa",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/oa/"
+      ]
+    },
+    "ttsText": "O A. /oa/ as in boat.",
+    "examples": [
+      {
+        "sound": "/oa/",
+        "word": "boat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/54-oa.mp3"
+  },
+  {
+    "id": 55,
+    "symbol": "gu",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/gu/"
+      ]
+    },
+    "ttsText": "G U. /gu/ as in guess.",
+    "examples": [
+      {
+        "sound": "/gu/",
+        "word": "guess"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/55-gu.mp3"
+  },
+  {
+    "id": 56,
+    "symbol": "ph",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ph/"
+      ]
+    },
+    "ttsText": "P H. /ph/ as in phone.",
+    "examples": [
+      {
+        "sound": "/ph/",
+        "word": "phone"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/56-ph.mp3"
+  },
+  {
+    "id": 57,
+    "symbol": "ough",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "four letters",
+      "sounds": [
+        "/ō/",
+        "/oo/",
+        "/ŭf/",
+        "/ŏf/",
+        "/aw/",
+        "/ow/"
+      ]
+    },
+    "ttsText": "O U G H. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+    "examples": [
+      {
+        "sound": "/ō/",
+        "word": "though"
+      },
+      {
+        "sound": "/oo/",
+        "word": "through"
+      },
+      {
+        "sound": "/ŭf/",
+        "word": "rough"
+      },
+      {
+        "sound": "/ŏf/",
+        "word": "cough"
+      },
+      {
+        "sound": "/aw/",
+        "word": "thought"
+      },
+      {
+        "sound": "/ow/",
+        "word": "bough"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/57-ough.mp3"
+  },
+  {
+    "id": 58,
+    "symbol": "oe",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/oe/"
+      ]
+    },
+    "ttsText": "O E. /oe/ as in toe.",
+    "examples": [
+      {
+        "sound": "/oe/",
+        "word": "toe"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/58-oe.mp3"
+  },
+  {
+    "id": 59,
+    "symbol": "ey",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ey/"
+      ]
+    },
+    "ttsText": "E Y. /ey/ as in key.",
+    "examples": [
+      {
+        "sound": "/ey/",
+        "word": "key"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/59-ey.mp3"
+  },
+  {
+    "id": 60,
+    "symbol": "igh",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "3 letters",
+      "sounds": [
+        "/igh/"
+      ]
+    },
+    "ttsText": "I G H. /igh/ as in night.",
+    "examples": [
+      {
+        "sound": "/igh/",
+        "word": "night"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/60-igh.mp3"
+  },
+  {
+    "id": 61,
+    "symbol": "kn",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "position": "beginning",
+      "sounds": [
+        "/n/"
+      ]
+    },
+    "ttsText": "K N. Two letters. /n/ as in knee. Beginning.",
+    "examples": [
+      {
+        "sound": "/n/",
+        "word": "knee"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/61-kn.mp3"
+  },
+  {
+    "id": 62,
+    "symbol": "gn",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/gn/"
+      ]
+    },
+    "ttsText": "G N. /gn/ as in gnat.",
+    "examples": [
+      {
+        "sound": "/gn/",
+        "word": "gnat"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/62-gn.mp3"
+  },
+  {
+    "id": 63,
+    "symbol": "wr",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "two letters",
+      "useRestriction": "not used at the end of a word",
+      "position": "beginning",
+      "sounds": [
+        "/r/"
+      ]
+    },
+    "ttsText": "W R. Two letters. /r/ as in write. Not used at the end of a word. Beginning.",
+    "examples": [
+      {
+        "sound": "/r/",
+        "word": "write"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/63-wr.mp3"
+  },
+  {
+    "id": 64,
+    "symbol": "ie",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ie/"
+      ]
+    },
+    "ttsText": "I E. /ie/ as in pie.",
+    "examples": [
+      {
+        "sound": "/ie/",
+        "word": "pie"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/64-ie.mp3"
+  },
+  {
+    "id": 65,
+    "symbol": "dge",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "3 letters",
+      "sounds": [
+        "/dge/"
+      ]
+    },
+    "ttsText": "D G E. /dge/ as in bridge.",
+    "examples": [
+      {
+        "sound": "/dge/",
+        "word": "bridge"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/65-dge.mp3"
+  },
+  {
+    "id": 66,
+    "symbol": "ei",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ei/"
+      ]
+    },
+    "ttsText": "E I. /ei/ as in eight.",
+    "examples": [
+      {
+        "sound": "/ei/",
+        "word": "eight"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/66-ei.mp3"
+  },
+  {
+    "id": 67,
+    "symbol": "eigh",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "4 letters",
+      "sounds": [
+        "/eigh/"
+      ]
+    },
+    "ttsText": "E I G H. /eigh/ as in eight.",
+    "examples": [
+      {
+        "sound": "/eigh/",
+        "word": "eight"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/67-eigh.mp3"
+  },
+  {
+    "id": 68,
+    "symbol": "ti",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ti/"
+      ]
+    },
+    "ttsText": "T I. /ti/ as in nation.",
+    "examples": [
+      {
+        "sound": "/ti/",
+        "word": "nation"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/68-ti.mp3"
+  },
+  {
+    "id": 69,
+    "symbol": "si",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/si/"
+      ]
+    },
+    "ttsText": "S I. /si/ as in vision.",
+    "examples": [
+      {
+        "sound": "/si/",
+        "word": "vision"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/69-si.mp3"
+  },
+  {
+    "id": 70,
+    "symbol": "ci",
+    "group": "multi",
+    "cuePhrases": {
+      "letterCount": "2 letters",
+      "sounds": [
+        "/ci/"
+      ]
+    },
+    "ttsText": "C I. /ci/ as in special.",
+    "examples": [
+      {
+        "sound": "/ci/",
+        "word": "special"
+      }
+    ],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/70-ci.mp3"
+  },
+  {
+    "id": 71,
+    "symbol": "sci",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "S C I. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/71-sci.mp3"
+  },
+  {
+    "id": 72,
+    "symbol": "our",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "O U R. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/72-our.mp3"
+  },
+  {
+    "id": 73,
+    "symbol": "eu",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "E U. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/73-eu.mp3"
+  },
+  {
+    "id": 74,
+    "symbol": "augh",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "4 letters"
+    },
+    "ttsText": "A U G H. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/74-augh.mp3"
+  },
+  {
+    "id": 75,
+    "symbol": "gh",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "G H. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/75-gh.mp3"
+  },
+  {
+    "id": 76,
+    "symbol": "que",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "Q U E. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/76-que.mp3"
+  },
+  {
+    "id": 77,
+    "symbol": "bu",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "B U. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/77-bu.mp3"
+  },
+  {
+    "id": 78,
+    "symbol": "lk",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "L K. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/78-lk.mp3"
+  },
+  {
+    "id": 79,
+    "symbol": "mb",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "M B. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/79-mb.mp3"
+  },
+  {
+    "id": 80,
+    "symbol": "mn",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "M N. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/80-mn.mp3"
+  },
+  {
+    "id": 81,
+    "symbol": "st",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "S T. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/81-st.mp3"
+  },
+  {
+    "id": 82,
+    "symbol": "the",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "T H E. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/82-the.mp3"
+  },
+  {
+    "id": 83,
+    "symbol": "arr",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "A R R. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/83-arr.mp3"
+  },
+  {
+    "id": 84,
+    "symbol": "err",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "E R R. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/84-err.mp3"
+  },
+  {
+    "id": 85,
+    "symbol": "ssi",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "3 letters"
+    },
+    "ttsText": "S S I. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/85-ssi.mp3"
+  },
+  {
+    "id": 86,
+    "symbol": "te",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "T E. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/86-te.mp3"
+  },
+  {
+    "id": 87,
+    "symbol": "dg",
+    "group": "advanced",
+    "cuePhrases": {
+      "letterCount": "2 letters"
+    },
+    "ttsText": "D G. Listen for this phonogram sound.",
+    "examples": [],
+    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
+    "reviewStatus": "pending_approval",
+    "audioPath": "audio/87-dg.mp3"
+  }
 ]
+
+

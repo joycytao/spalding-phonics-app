@@ -73,6 +73,19 @@ test('ew and kn transcripts keep cues separate from approved Voicebox text', () 
   assert.equal(kn.ttsText, 'K N. Two letters. /n/ as in knee. Beginning.');
 });
 
+test('phonograms 1 through 70 have sourced draft narration and examples', () => {
+  const drafts = transcriptSkeleton.filter((item) => item.id <= 70);
+
+  assert.equal(drafts.length, 70);
+  for (const draft of drafts) {
+    assert.equal(draft.reviewStatus, 'pending_approval');
+    assert.ok(draft.examples.length > 0, `${draft.symbol} needs an example`);
+    assert.ok(!draft.ttsText.includes('Listen for this phonogram sound.'));
+    assert.match(draft.source, /^https?:\/\//);
+    assert.match(draft.ttsText, new RegExp(draft.examples[0].word));
+  }
+});
+
 test('published phonograms use approved ttsText as narration', () => {
   const ew = phonograms.find((item) => item.symbol === 'ew');
   const kn = phonograms.find((item) => item.symbol === 'kn');
