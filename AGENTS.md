@@ -16,6 +16,16 @@ Before starting implementation work, every agent must:
 4. Do not start a later issue merely because it is visible first in GitHub's default issue list.
 5. If no issue is eligible, report the blocking dependency and do not bypass the queue without an explicit project decision.
 
+## Stale Pickup Reclaim
+
+A `CODEX_AGENT_PICKUP` marker prevents duplicate work only while it represents active work. An agent may reclaim the first eligible issue in queue order when all of the following are true:
+
+1. The issue has a pickup marker.
+2. The issue has no open pull request and no identifiable in-progress branch.
+3. The marker has no valid progress update that shows active work.
+
+Before starting reclaimed work, the agent must leave a new issue comment stating that it verified the prior pickup is stale and is reclaiming the issue. It must then continue execution rather than skipping the issue. A pickup marker alone is not a reason to block the queue.
+
 ## Adding Or Splitting Work
 
 Before creating a new issue, or splitting an existing issue into smaller work:
