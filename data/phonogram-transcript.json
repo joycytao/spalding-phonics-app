@@ -1508,12 +1508,13 @@
     "symbol": "sci",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/s/"]
     },
-    "ttsText": "S C I. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "S C I. Three letters. /s/ as in science.",
+    "examples": [{"sound": "/s/", "word": "science"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/71-sci.mp3"
   },
   {
@@ -1521,12 +1522,13 @@
     "symbol": "our",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/owr/"]
     },
-    "ttsText": "O U R. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "O U R. Three letters. /owr/ as in pour.",
+    "examples": [{"sound": "/owr/", "word": "pour"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/72-our.mp3"
   },
   {
@@ -1534,12 +1536,13 @@
     "symbol": "eu",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/yoo/"]
     },
-    "ttsText": "E U. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "E U. Two letters. /yoo/ as in Europe.",
+    "examples": [{"sound": "/yoo/", "word": "Europe"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/73-eu.mp3"
   },
   {
@@ -1547,12 +1550,13 @@
     "symbol": "augh",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "4 letters"
+      "letterCount": "4 letters",
+      "sounds": ["/aw/"]
     },
-    "ttsText": "A U G H. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "A U G H. Four letters. /aw/ as in caught.",
+    "examples": [{"sound": "/aw/", "word": "caught"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/74-augh.mp3"
   },
   {
@@ -1560,12 +1564,13 @@
     "symbol": "gh",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/f/"]
     },
-    "ttsText": "G H. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "G H. Two letters. /f/ as in laugh.",
+    "examples": [{"sound": "/f/", "word": "laugh"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/75-gh.mp3"
   },
   {
@@ -1573,12 +1578,13 @@
     "symbol": "que",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/k/"]
     },
-    "ttsText": "Q U E. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "Q U E. Three letters. /k/ as in unique.",
+    "examples": [{"sound": "/k/", "word": "unique"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/76-que.mp3"
   },
   {
@@ -1586,12 +1592,13 @@
     "symbol": "bu",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/b/"]
     },
-    "ttsText": "B U. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "B U. Two letters. /b/ as in build.",
+    "examples": [{"sound": "/b/", "word": "build"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/77-bu.mp3"
   },
   {
@@ -1599,12 +1606,13 @@
     "symbol": "lk",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/k/"]
     },
-    "ttsText": "L K. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "L K. Two letters. /k/ as in walk.",
+    "examples": [{"sound": "/k/", "word": "walk"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/78-lk.mp3"
   },
   {
@@ -1612,12 +1620,13 @@
     "symbol": "mb",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/m/"]
     },
-    "ttsText": "M B. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "M B. Two letters. /m/ as in lamb.",
+    "examples": [{"sound": "/m/", "word": "lamb"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/79-mb.mp3"
   },
   {
@@ -1625,12 +1634,13 @@
     "symbol": "mn",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/m/"]
     },
-    "ttsText": "M N. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "M N. Two letters. /m/ as in mnemonic.",
+    "examples": [{"sound": "/m/", "word": "mnemonic"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/80-mn.mp3"
   },
   {
@@ -1638,12 +1648,13 @@
     "symbol": "st",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/st/"]
     },
-    "ttsText": "S T. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "S T. Two letters. /st/ as in stop.",
+    "examples": [{"sound": "/st/", "word": "stop"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/81-st.mp3"
   },
   {
@@ -1651,12 +1662,13 @@
     "symbol": "the",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/th/"]
     },
-    "ttsText": "T H E. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "T H E. Three letters. /th/ as in the.",
+    "examples": [{"sound": "/th/", "word": "the"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/82-the.mp3"
   },
   {
@@ -1664,12 +1676,13 @@
     "symbol": "arr",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/ar/"]
     },
-    "ttsText": "A R R. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "A R R. Three letters. /ar/ as in carry.",
+    "examples": [{"sound": "/ar/", "word": "carry"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/83-arr.mp3"
   },
   {
@@ -1677,12 +1690,13 @@
     "symbol": "err",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/er/"]
     },
-    "ttsText": "E R R. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "E R R. Three letters. /er/ as in cherry.",
+    "examples": [{"sound": "/er/", "word": "cherry"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/84-err.mp3"
   },
   {
@@ -1690,12 +1704,13 @@
     "symbol": "ssi",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "3 letters"
+      "letterCount": "3 letters",
+      "sounds": ["/sh/"]
     },
-    "ttsText": "S S I. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "S S I. Three letters. /sh/ as in mission.",
+    "examples": [{"sound": "/sh/", "word": "mission"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/85-ssi.mp3"
   },
   {
@@ -1703,12 +1718,13 @@
     "symbol": "te",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/ch/"]
     },
-    "ttsText": "T E. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "T E. Two letters. /ch/ as in nature.",
+    "examples": [{"sound": "/ch/", "word": "nature"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/86-te.mp3"
   },
   {
@@ -1716,14 +1732,13 @@
     "symbol": "dg",
     "group": "advanced",
     "cuePhrases": {
-      "letterCount": "2 letters"
+      "letterCount": "2 letters",
+      "sounds": ["/j/"]
     },
-    "ttsText": "D G. Listen for this phonogram sound.",
-    "examples": [],
-    "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-    "reviewStatus": "pending_approval",
+    "ttsText": "D G. Two letters. /j/ as in badge.",
+    "examples": [{"sound": "/j/", "word": "badge"}],
+    "source": "Unverified working draft; canonical curriculum source is missing.",
+    "reviewStatus": "blocked",
     "audioPath": "audio/87-dg.mp3"
   }
 ]
-
-

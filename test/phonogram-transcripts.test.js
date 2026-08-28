@@ -30,7 +30,7 @@ test('data transcript skeleton fixes the 87-item curriculum order before narrati
     assert.equal(record.id, id);
     assert.equal(record.group, group);
     assert.equal(record.audioPath, `audio/${String(id).padStart(2, '0')}-${record.symbol}.mp3`);
-    assert.equal(record.reviewStatus, 'pending_approval');
+    assert.equal(record.reviewStatus, id <= 70 ? 'pending_approval' : 'blocked');
   });
 });
 
@@ -84,6 +84,20 @@ test('phonograms 1 through 70 have sourced draft narration and examples', () => 
     assert.match(draft.source, /^https?:\/\//);
     assert.match(draft.ttsText, new RegExp(draft.examples[0].word));
   }
+});
+
+test('advanced phonograms have explicit drafts and remain ineligible for rendering', () => {
+  const advanced = phonogramTranscripts.filter((item) => item.group === 'advanced');
+
+  assert.equal(advanced.length, 17);
+  for (const transcript of advanced) {
+    assert.notEqual(transcript.ttsText, `${transcript.symbol.toUpperCase().split('').join(' ')}. Listen for this phonogram sound.`);
+    assert.ok(transcript.examples.length > 0, `${transcript.symbol} needs an example`);
+    assert.match(transcript.source, /https?:\/\/|missing|unverified/i);
+    assert.notEqual(transcript.reviewStatus, 'approved');
+  }
+
+  assert.equal(advanced.filter((item) => item.reviewStatus === 'approved').length, 0);
 });
 
 test('published phonograms use approved ttsText as narration', () => {
