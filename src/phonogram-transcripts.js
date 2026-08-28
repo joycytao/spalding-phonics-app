@@ -1,3 +1,5 @@
+import transcriptSkeleton from '../data/phonogram-transcript.json' with { type: 'json' };
+
 export const ALLOWED_TRANSCRIPT_STATUSES = [
   'pending_approval',
   'approved',
@@ -21,15 +23,6 @@ export const TRANSCRIPT_SCHEMA = {
   reviewStatus: 'pending_approval | approved | needs_revision | blocked',
   audioPath: 'string: local MP3 path'
 };
-
-const source = 'https://valleyacademy.com/parents/student-resources/phonogram-helper/';
-
-const first70 = [
-  'a', 'c', 'd', 'f', 'g', 'o', 's', 'qu', 'b', 'e', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'p', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-  'sh', 'ee', 'th', 'ow', 'ou', 'oo', 'ch', 'ar', 'ay', 'ai', 'oy', 'oi', 'er', 'ir', 'ur', 'wor', 'ear', 'ng', 'ea', 'aw', 'au', 'or', 'ck', 'wh', 'ed', 'ew', 'ui', 'oa', 'gu', 'ph', 'ough', 'oe', 'ey', 'igh', 'kn', 'gn', 'wr', 'ie', 'dge', 'ei', 'eigh', 'ti', 'si', 'ci'
-];
-
-const advanced = ['sci', 'our', 'eu', 'augh', 'gh', 'que', 'bu', 'lk', 'mb', 'mn', 'st', 'the', 'arr', 'err', 'ssi', 'te', 'dg'];
 
 const reviewedTranscripts = {
   ew: {
@@ -67,31 +60,11 @@ const reviewedTranscripts = {
   }
 };
 
-function spokenSymbol(symbol) {
-  return symbol.toUpperCase().split('').join(' ');
-}
-
-function defaultTranscript(symbol) {
+function buildTranscript(record) {
+  const override = reviewedTranscripts[record.symbol] ?? {};
   return {
-    cuePhrases: symbol.length > 1 ? { letterCount: `${symbol.length} letters` } : {},
-    examples: [],
-    ttsText: `${spokenSymbol(symbol)}. Listen for this phonogram sound.`,
-    reviewStatus: 'pending_approval'
-  };
-}
-
-function buildTranscript(symbol, index) {
-  const id = index + 1;
-  const override = reviewedTranscripts[symbol] ?? {};
-
-  return {
-    id,
-    symbol,
-    group: index < 26 ? 'single' : index < 70 ? 'multi' : 'advanced',
-    ...defaultTranscript(symbol),
-    ...override,
-    source,
-    audioPath: `audio/${String(id).padStart(2, '0')}-${symbol}.mp3`
+    ...record,
+    ...override
   };
 }
 
@@ -99,6 +72,8 @@ export function validateTranscriptCatalog(transcripts) {
   if (!Array.isArray(transcripts)) {
     throw new Error('Transcript catalog must be an array.');
   }
+
+  const symbols = new Set();
 
   transcripts.forEach((transcript, index) => {
     const id = transcript?.id ?? index + 1;
@@ -112,6 +87,15 @@ export function validateTranscriptCatalog(transcripts) {
         throw new Error(`Transcript ${id} is missing required field "${field}".`);
       }
     }
+
+    if (transcript.id !== index + 1) {
+      throw new Error(`Transcript at position ${index + 1} must use id ${index + 1}.`);
+    }
+
+    if (symbols.has(transcript.symbol)) {
+      throw new Error(`Transcript ${id} duplicates symbol "${transcript.symbol}".`);
+    }
+    symbols.add(transcript.symbol);
 
     if (!['single', 'multi', 'advanced'].includes(transcript.group)) {
       throw new Error(`Transcript ${id} uses unsupported group "${transcript.group}".`);
@@ -129,12 +113,21 @@ export function validateTranscriptCatalog(transcripts) {
       throw new Error(`Transcript ${id} examples must be an array.`);
     }
 
-    if (!transcript.audioPath.startsWith('audio/') || !transcript.audioPath.endsWith('.mp3')) {
-      throw new Error(`Transcript ${id} audioPath must point to a local MP3 file.`);
+    const expectedAudioPath = `audio/${String(id).padStart(2, '0')}-${transcript.symbol}.mp3`;
+    if (transcript.audioPath !== expectedAudioPath) {
+      throw new Error(`Transcript ${id} audioPath must be "${expectedAudioPath}".`);
     }
   });
 
   return transcripts;
 }
 
-export const phonogramTranscripts = validateTranscriptCatalog([...first70, ...advanced].map(buildTranscript));
+export function validateCompleteTranscriptCatalog(transcripts) {
+  const validated = validateTranscriptCatalog(transcripts);
+  if (validated.length !== 87) {
+    throw new Error(`Transcript catalog must include exactly 87 records, received ${validated.length}.`);
+  }
+  return validated;
+}
+
+export const phonogramTranscripts = validateCompleteTranscriptCatalog(transcriptSkeleton.map(buildTranscript));
