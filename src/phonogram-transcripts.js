@@ -19,7 +19,7 @@ export const TRANSCRIPT_SCHEMA = {
   },
   ttsText: 'string: reviewed narration text; the only text sent to Voicebox',
   examples: 'array of { sound, word } example pairs',
-  source: 'string: source URL for the record',
+  source: 'string: source URL or explicit missing-source note for the record',
   reviewStatus: 'pending_approval | approved | needs_revision | blocked',
   audioPath: 'string: local MP3 path'
 };
