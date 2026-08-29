@@ -3,9 +3,11 @@
   "purpose": "Calibrate narration conventions before reviewing the complete curriculum.",
   "sampleSymbols": ["a", "th", "oo", "ew", "ough"],
   "conventionDecisions": [
+    "capitalization",
     "symbol naming",
     "phonetic notation",
     "example words",
+    "punctuation",
     "pause placement"
   ],
   "samples": [
@@ -21,7 +23,7 @@
         {"sound": "/ah/", "word": "father"}
       ],
       "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-      "reviewStatus": "pending_approval",
+      "reviewStatus": "approved",
       "audioPath": "audio/01-a.mp3",
       "reviewQuestions": [
         "Should the single-letter symbol be spoken as the letter name before its sounds?",
@@ -40,7 +42,7 @@
         {"sound": "/th/", "word": "this"}
       ],
       "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-      "reviewStatus": "pending_approval",
+      "reviewStatus": "approved",
       "audioPath": "audio/29-th.mp3",
       "reviewQuestions": [
         "How should the voiced and unvoiced th sounds be distinguished in notation?",
@@ -59,7 +61,7 @@
         {"sound": "/oo/", "word": "book"}
       ],
       "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-      "reviewStatus": "pending_approval",
+      "reviewStatus": "approved",
       "audioPath": "audio/32-oo.mp3",
       "reviewQuestions": [
         "Should the two oo sounds use distinct phonetic notation?",
@@ -82,7 +84,7 @@
         {"sound": "/yoo/", "word": "new"}
       ],
       "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-      "reviewStatus": "pending_approval",
+      "reviewStatus": "approved",
       "audioPath": "audio/52-ew.mp3",
       "reviewQuestions": [
         "Are /oo/ and /yoo/ clearly differentiated in the recorded wording?",
@@ -108,7 +110,7 @@
         {"sound": "/ow/", "word": "bough"}
       ],
       "source": "https://valleyacademy.com/parents/student-resources/phonogram-helper/",
-      "reviewStatus": "pending_approval",
+      "reviewStatus": "approved",
       "audioPath": "audio/57-ough.mp3",
       "reviewQuestions": [
         "Are all six sound notations and examples accurate and intelligible?",
