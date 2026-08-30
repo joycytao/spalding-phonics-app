@@ -41,3 +41,22 @@ Do not silently insert work. Any inserted issue must make its effect on the rema
 ## Transcript And Audio Rule
 
 For phonogram narration work, only records with `approvalStatus: approved` may be rendered as release audio. Draft transcript content remains `pending_approval` until the designated final reviewer approves it against the expert reference video and recorded source evidence.
+
+## Review And Evidence Gates
+
+Before selecting an Issue, inspect all open pull requests first. Record every
+new review or issue comment since the last automation-memory checkpoint and
+handle it before starting new work. A normal review fix updates the existing
+branch and PR; create a dependency Issue only when the comment identifies a
+separate prerequisite that cannot be completed in the same change.
+
+Every implementation decision must cite concrete repository evidence: an Issue
+body or comment, PR diff or review comment, failing check, test result, or
+execution-queue entry. Convert the selected evidence into one explicit
+acceptance criterion before editing. If the evidence is ambiguous, stop and
+request the missing decision rather than inferring intent.
+
+Every completed run must record the exact verification commands and outcomes.
+If browser verification is relevant but the already-installed runtime is not
+available, record the exact skip reason; treat it as blocking only when the
+selected Issue explicitly requires browser-flow verification.
