@@ -18,9 +18,9 @@ const expectedSkeletonSymbols = [
   'sh', 'ee', 'th', 'ow', 'ou', 'oo', 'ch', 'ar', 'ay', 'ai', 'oy', 'oi', 'er', 'ir', 'ur', 'wor', 'ear', 'ng', 'ea', 'aw', 'au', 'or', 'ck', 'wh', 'ed', 'ew', 'ui', 'oa', 'gu', 'ph', 'ough', 'oe', 'ey', 'igh', 'kn', 'gn', 'wr', 'ie', 'dge', 'ei', 'eigh', 'ti', 'si', 'ci',
   'sci', 'our', 'eu', 'augh', 'gh', 'que', 'bu', 'lk', 'mb', 'mn', 'st', 'the', 'arr', 'err', 'ssi', 'te', 'dg'
 ];
-const approvedReviewSampleIds = new Set([1, 29, 32, 52, 57]);
+const approvedCurriculumIds = new Set(Array.from({ length: 70 }, (_, index) => index + 1));
 
-test('data transcript skeleton fixes the 87-item curriculum order before narration approval', () => {
+test('data transcript catalog fixes the 87-item curriculum order and review statuses', () => {
   assert.equal(transcriptSkeleton.length, 87);
   assert.deepEqual(transcriptSkeleton.map((record) => record.symbol), expectedSkeletonSymbols);
   assert.equal(new Set(transcriptSkeleton.map((record) => record.symbol)).size, 87);
@@ -32,7 +32,7 @@ test('data transcript skeleton fixes the 87-item curriculum order before narrati
     assert.equal(record.id, id);
     assert.equal(record.group, group);
     assert.equal(record.audioPath, `audio/${String(id).padStart(2, '0')}-${record.symbol}.mp3`);
-    assert.equal(record.reviewStatus, approvedReviewSampleIds.has(id) ? 'approved' : id <= 70 ? 'pending_approval' : 'blocked');
+    assert.equal(record.reviewStatus, approvedCurriculumIds.has(id) ? 'approved' : 'blocked');
   });
 });
 
@@ -80,11 +80,22 @@ test('phonograms 1 through 70 have sourced draft narration and examples', () => 
 
   assert.equal(drafts.length, 70);
   for (const draft of drafts) {
-    assert.equal(draft.reviewStatus, approvedReviewSampleIds.has(draft.id) ? 'approved' : 'pending_approval');
+    assert.equal(draft.reviewStatus, 'approved');
     assert.ok(draft.examples.length > 0, `${draft.symbol} needs an example`);
     assert.ok(!draft.ttsText.includes('Listen for this phonogram sound.'));
     assert.match(draft.source, /^https?:\/\//);
     assert.match(draft.ttsText, new RegExp(draft.examples[0].word));
+  }
+});
+
+test('approved curriculum narrations use the sample letter-count convention', () => {
+  const multiLetterCounts = { 2: 'two letters', 3: 'three letters', 4: 'four letters' };
+
+  for (const transcript of transcriptSkeleton.filter((item) => item.id <= 70 && item.group === 'multi')) {
+    const count = multiLetterCounts[transcript.symbol.length];
+    assert.equal(transcript.cuePhrases.letterCount, count, `${transcript.symbol} letterCount`);
+    assert.match(transcript.ttsText, new RegExp(`\\. ${count}\\.`, 'i'), `${transcript.symbol} narration letter count`);
+    assert.equal(transcript.reviewStatus, 'approved');
   }
 });
 
@@ -169,7 +180,7 @@ test('known narrations are migrated into the canonical transcript records', () =
     const transcript = phonogramTranscripts.find((item) => item.symbol === symbol);
     assert.deepEqual(transcript.cuePhrases.sounds, details.sounds);
     assert.deepEqual(transcript.examples, details.examples);
-    assert.equal(transcript.reviewStatus, approvedReviewSampleIds.has(transcript.id) ? 'approved' : 'pending_approval');
+    assert.equal(transcript.reviewStatus, 'approved');
     assert.doesNotMatch(transcript.ttsText, /Listen for this phonogram sound/);
   }
 });
