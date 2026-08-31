@@ -28,6 +28,14 @@ The helper submits each narration to Voicebox, polls its asynchronous generation
 
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
+Before generating audio, verify that Voicebox is reachable and the production profile is available:
+
+```sh
+npm run voicebox:preflight
+```
+
+The preflight checks `/health` and `/profiles` using the local Voicebox REST API. A downloaded but unloaded model (`model_loaded=false` and `model_downloaded=true`) is reported as idle and remains render-ready; the command fails for an unavailable model or a missing/mismatched `story-narrator-01` profile.
+
 ## Transcript Data Contract
 
 The ordered transcript catalog lives in `data/phonogram-transcript.json`. It contains all 87 curriculum records with fixed IDs, symbols, groups, local MP3 paths, draft or migrated narration, examples, and review status. Runtime validation lives in `src/phonogram-transcripts.js`; the JSON file is the canonical source for transcript content.
