@@ -34,6 +34,8 @@ node scripts/generate-audio.mjs
 
 The request and download flow follow the [Voicebox API documentation](https://github.com/jamiepine/voicebox#api). Listen to and approve every generated result before distributing the app.
 
+The renderer can resume safely when `audio/render-manifest.json` contains a completed entry whose transcript version, profile ID, output path, and file all still match. It skips those current rows, retries changed or incomplete rows, and reports every failed row without stopping the rest of the batch.
+
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
 Before generating audio, verify that Voicebox is reachable and the production profile is available:
