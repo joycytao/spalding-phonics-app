@@ -36,6 +36,8 @@ The request and download flow follow the [Voicebox API documentation](https://gi
 
 The renderer can resume safely when `audio/render-manifest.json` contains a completed entry whose transcript version, profile ID, output path, and file all still match. It skips those current rows, retries changed or incomplete rows, and reports every failed row without stopping the rest of the batch.
 
+Each attempted render also updates `audio/render-manifest.json` with the transcript version, phonogram, profile name and ID, engine, model, Voicebox generation ID, output path, timestamp, and `completed` or `failed` status. Failed entries include the actionable error and do not create placeholder audio.
+
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
 Before generating audio, verify that Voicebox is reachable and the production profile is available:

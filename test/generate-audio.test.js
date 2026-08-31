@@ -3,9 +3,51 @@ import assert from 'node:assert/strict';
 import {
   PRODUCTION_PROFILE_ID,
   createApprovedAudioPlan,
+  createRenderManifestEntry,
+  upsertRenderManifest,
+  writeRenderManifest,
   generateApprovedAudio,
   runApprovedAudioBatch
 } from '../src/audio-generator.js';
+
+test('creates auditable manifest entries with transcript and Voicebox provenance', () => {
+  const entry = createRenderManifestEntry({
+    transcript: { id: 52, symbol: 'ew', ttsText: 'E W.', audioPath: 'audio/52-ew.mp3' },
+    generation: { id: 'generation-52', model: 'qwen' },
+    status: 'completed',
+    timestamp: '2026-08-31T20:00:00.000Z'
+  });
+
+  assert.deepEqual(entry, {
+    transcriptId: 52,
+    transcriptVersion: '52:E W.',
+    symbol: 'ew',
+    profileName: 'story-narrator-01',
+    profileId: PRODUCTION_PROFILE_ID,
+    engine: 'qwen_custom_voice',
+    model: 'qwen',
+    generationId: 'generation-52',
+    outputPath: 'audio/52-ew.mp3',
+    timestamp: '2026-08-31T20:00:00.000Z',
+    status: 'completed'
+  });
+});
+
+test('updates one manifest record per output and writes valid JSON', async () => {
+  const original = [{ outputPath: 'audio/52-ew.mp3', status: 'failed' }];
+  const next = upsertRenderManifest(original, { outputPath: 'audio/52-ew.mp3', status: 'completed' });
+  const writes = [];
+
+  await writeRenderManifest('/tmp/render-manifest.json', next, async (path, content) => {
+    writes.push({ path, content });
+  });
+
+  assert.deepEqual(next, [{ outputPath: 'audio/52-ew.mp3', status: 'completed' }]);
+  assert.deepEqual(writes, [{
+    path: '/tmp/render-manifest.json',
+    content: '[\n  {\n    "outputPath": "audio/52-ew.mp3",\n    "status": "completed"\n  }\n]\n'
+  }]);
+});
 
 test('skips an approved row when its transcript metadata and output are current', async () => {
   const requests = [];

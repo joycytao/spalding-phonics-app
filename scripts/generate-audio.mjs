@@ -1,7 +1,13 @@
 import { readFile } from 'node:fs/promises';
-import { runApprovedAudioBatch, PRODUCTION_PROFILE_ID, DEFAULT_VOICEBOX_URL } from '../src/audio-generator.js';
+import {
+  runApprovedAudioBatch,
+  writeRenderManifest,
+  PRODUCTION_PROFILE_ID,
+  DEFAULT_VOICEBOX_URL
+} from '../src/audio-generator.js';
 
 const outputDirectory = new URL('../audio/', import.meta.url).pathname;
+const manifestPath = new URL('../audio/render-manifest.json', import.meta.url).pathname;
 let existingMetadata = [];
 try {
   const manifest = JSON.parse(await readFile(new URL('../audio/render-manifest.json', import.meta.url), 'utf8'));
@@ -14,7 +20,9 @@ const report = await runApprovedAudioBatch({
   baseUrl: process.env.VOICEBOX_URL ?? DEFAULT_VOICEBOX_URL,
   profileId: process.env.VOICEBOX_PROFILE_ID ?? PRODUCTION_PROFILE_ID,
   outputDirectory,
-  existingMetadata
+  existingMetadata,
+  manifestEntries: existingMetadata,
+  manifestWriter: (entries) => writeRenderManifest(manifestPath, entries)
 });
 
 for (const audioPath of report.generated) console.log(`Generated ${audioPath}`);
