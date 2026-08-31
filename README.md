@@ -21,10 +21,18 @@ npm test
 Start Voicebox locally, select or create the narration profile, then run:
 
 ```sh
-VOICEBOX_PROFILE_ID="your-profile-id" node scripts/generate-audio.mjs
+node scripts/generate-audio.mjs
 ```
 
-The helper submits each narration to Voicebox, polls its asynchronous generation result, downloads the finished audio, and writes it into `audio/`. Listen to and approve every result before distributing the app. The request and download flow follow the [Voicebox API documentation](https://github.com/jamiepine/voicebox#api).
+The helper reads the canonical transcript catalog, submits only rows with `reviewStatus: approved` using the validated `story-narrator-01` profile, polls its asynchronous generation result, downloads the finished audio, and writes it to each row's fixed `audioPath`. Override the local Voicebox URL or profile only when explicitly needed:
+
+```sh
+VOICEBOX_URL="http://127.0.0.1:17493" \
+VOICEBOX_PROFILE_ID="a07dbe47-2f91-4c2b-88df-0551bdaebc99" \
+node scripts/generate-audio.mjs
+```
+
+The request and download flow follow the [Voicebox API documentation](https://github.com/jamiepine/voicebox#api). Listen to and approve every generated result before distributing the app.
 
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
