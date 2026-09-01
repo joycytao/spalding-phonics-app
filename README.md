@@ -38,6 +38,8 @@ The renderer can resume safely when `audio/render-manifest.json` contains a comp
 
 Each attempted render also updates `audio/render-manifest.json` with the transcript version, phonogram, profile name and ID, engine, model, Voicebox generation ID, output path, timestamp, and `completed` or `failed` status. Failed entries include the actionable error and do not create placeholder audio.
 
+To render only the approved `ew` pilot for instructional comparison, run `npm run audio:pilot:ew`. Compare `audio/52-ew.mp3` with the reference generation recorded in Issue #13; keep the transcript approval decision human-owned.
+
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
 Before generating audio, verify that Voicebox is reachable and the production profile is available:

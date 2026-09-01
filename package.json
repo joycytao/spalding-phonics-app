@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "voicebox:preflight": "node scripts/voicebox-preflight.mjs"
+    "voicebox:preflight": "node scripts/voicebox-preflight.mjs",
+    "audio:pilot:ew": "node scripts/generate-ew-pilot.mjs"
   }
 }

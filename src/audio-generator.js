@@ -119,7 +119,7 @@ export async function runApprovedAudioBatch({
         {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify(createPhonogramGenerationRequest(item.profileId, { ttsText: item.text }))
+          body: JSON.stringify(createPhonogramGenerationRequest(item.profileId, { ttsText: item.text }, PRODUCTION_ENGINE))
         },
         `Voicebox failed for ${item.symbol}`
       );
@@ -133,6 +133,7 @@ export async function runApprovedAudioBatch({
           undefined,
           `Voicebox could not read generation ${generation.id}`
         );
+        generation = { ...generation, ...history };
         status = history.status;
       }
       if (status === 'failed') throw new Error(`Voicebox generation failed for ${item.symbol}.`);

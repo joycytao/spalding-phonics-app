@@ -142,7 +142,8 @@ test('generates approved rows with the production profile and fixed transcript p
   assert.deepEqual(JSON.parse(requests[0].options.body), {
     profile_id: PRODUCTION_PROFILE_ID,
     text: 'A.',
-    language: 'en'
+    language: 'en',
+    engine: 'qwen_custom_voice'
   });
   assert.deepEqual(writes, [{ path: 'audio/01-a.mp3', data: [1, 2, 3] }]);
 });
