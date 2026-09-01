@@ -6,6 +6,7 @@ export const DEFAULT_VOICEBOX_URL = 'http://127.0.0.1:17493';
 export const PRODUCTION_PROFILE_ID = 'a07dbe47-2f91-4c2b-88df-0551bdaebc99';
 export const PRODUCTION_PROFILE_NAME = 'story-narrator-01';
 export const PRODUCTION_ENGINE = 'qwen_custom_voice';
+export const DEFAULT_NARRATION_INSTRUCT = 'Speak slowly and clearly, especially when pronouncing phonogram sounds.';
 
 export function transcriptVersion(transcript) {
   return `${transcript.id}:${transcript.ttsText ?? transcript.text}`;
@@ -119,7 +120,12 @@ export async function runApprovedAudioBatch({
         {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify(createPhonogramGenerationRequest(item.profileId, { ttsText: item.text }, PRODUCTION_ENGINE))
+          body: JSON.stringify(createPhonogramGenerationRequest(
+            item.profileId,
+            { ttsText: item.text },
+            PRODUCTION_ENGINE,
+            DEFAULT_NARRATION_INSTRUCT
+          ))
         },
         `Voicebox failed for ${item.symbol}`
       );

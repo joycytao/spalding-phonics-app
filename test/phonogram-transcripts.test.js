@@ -67,7 +67,7 @@ test('ew and kn transcripts keep cues separate from approved Voicebox text', () 
     { sound: '/oo/', word: 'grew' },
     { sound: '/yoo/', word: 'new' }
   ]);
-  assert.equal(ew.ttsText, '/oo/, /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
+  assert.equal(ew.ttsText, '/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
 
   assert.equal(kn.cuePhrases.letterCount, 'two letters');
   assert.equal(kn.cuePhrases.position, 'beginning');
@@ -117,7 +117,7 @@ test('published phonograms use approved ttsText as narration', () => {
   const ew = phonograms.find((item) => item.symbol === 'ew');
   const kn = phonograms.find((item) => item.symbol === 'kn');
 
-  assert.equal(ew.narration, '/oo/, /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
+  assert.equal(ew.narration, '/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
   assert.equal(kn.narration, 'K N. Two letters. /n/ as in knee. Beginning.');
 });
 
