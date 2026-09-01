@@ -136,6 +136,16 @@ export async function runApprovedAudioBatch({
         generation = { ...generation, ...history };
         status = history.status;
       }
+      if (!generation.model && generation.id) {
+        const details = await requestJson(
+          fetchImpl,
+          `${baseUrl}/history/${generation.id}`,
+          undefined,
+          `Voicebox could not read generation ${generation.id}`
+        );
+        generation = { ...generation, ...details };
+        status = details.status ?? status;
+      }
       if (status === 'failed') throw new Error(`Voicebox generation failed for ${item.symbol}.`);
 
       const audioResponse = await fetchImpl(`${baseUrl}/audio/${generation.id}`);
