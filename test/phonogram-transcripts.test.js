@@ -8,6 +8,7 @@ import {
 } from '../src/phonogram-transcripts.js';
 import { phonograms } from '../src/phonograms.js';
 import reviewSamples from '../data/transcript-review-samples.json' with { type: 'json' };
+import reviewSummary from '../data/transcript-review-summary.json' with { type: 'json' };
 
 const transcriptSkeleton = JSON.parse(
   readFileSync(new URL('../data/phonogram-transcript.json', import.meta.url), 'utf8')
@@ -250,4 +251,19 @@ test('representative transcript review package covers the requested categories',
     assert.equal(sample.reviewStatus, 'approved');
     assert.ok(sample.reviewQuestions.length > 0);
   }
+});
+
+test('full transcript review summary covers every row without changing release status', () => {
+  assert.equal(reviewSummary.rows.length, 87);
+  assert.deepEqual(reviewSummary.rows.map((row) => row.id), Array.from({ length: 87 }, (_, index) => index + 1));
+  assert.deepEqual(
+    new Set(reviewSummary.rows.map((row) => row.decision)),
+    new Set(['approved', 'revise', 'blocked'])
+  );
+  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'blocked').length, 17);
+  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'revise').length, 43);
+  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'approved').length, 27);
+  assert.match(reviewSummary.basis, /not final release approval/);
+  assert.equal(reviewSummary.convention.multiLetterOrder, 'phonogram sound(s) before the letter-count explanation');
+  assert.equal(reviewSummary.convention.finalApproval, 'human instructional reviewer must confirm every row before release audio');
 });

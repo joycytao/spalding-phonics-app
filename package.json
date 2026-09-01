@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
+    "transcript:review:summary": "node scripts/generate-transcript-review-summary.mjs",
     "voicebox:preflight": "node scripts/voicebox-preflight.mjs",
     "audio:pilot:ew": "node scripts/generate-ew-pilot.mjs"
   }
