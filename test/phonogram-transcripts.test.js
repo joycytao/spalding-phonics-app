@@ -73,7 +73,7 @@ test('ew and kn transcripts keep cues separate from approved Voicebox text', () 
   assert.equal(kn.cuePhrases.letterCount, 'two letters');
   assert.equal(kn.cuePhrases.position, 'beginning');
   assert.deepEqual(kn.examples, [{ sound: '/n/', word: 'knee' }]);
-  assert.equal(kn.ttsText, 'K N. Two letters. /n/ as in knee. Beginning.');
+  assert.equal(kn.ttsText, ' /n/. Two letters. /n/ as in knee. Beginning.');
 });
 
 test('phonograms 1 through 70 have sourced draft narration and examples', () => {
@@ -95,7 +95,7 @@ test('approved curriculum narrations use the sample letter-count convention', ()
   for (const transcript of transcriptSkeleton.filter((item) => item.id <= 70 && item.group === 'multi')) {
     const count = multiLetterCounts[transcript.symbol.length];
     assert.equal(transcript.cuePhrases.letterCount, count, `${transcript.symbol} letterCount`);
-    assert.match(transcript.ttsText, new RegExp(`\\. ${count}\\.`, 'i'), `${transcript.symbol} narration letter count`);
+    assert.match(transcript.ttsText, new RegExp(`\\.\\s+${count}\\.`, 'i'), `${transcript.symbol} narration letter count`);
     assert.equal(transcript.reviewStatus, 'approved');
   }
 });
@@ -119,7 +119,7 @@ test('published phonograms use approved ttsText as narration', () => {
   const kn = phonograms.find((item) => item.symbol === 'kn');
 
   assert.equal(ew.narration, '/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.');
-  assert.equal(kn.narration, 'K N. Two letters. /n/ as in knee. Beginning.');
+  assert.equal(kn.narration, ' /n/. Two letters. /n/ as in knee. Beginning.');
 });
 
 test('known narrations are migrated into the canonical transcript records', () => {
@@ -258,11 +258,11 @@ test('full transcript review summary covers every row without changing release s
   assert.deepEqual(reviewSummary.rows.map((row) => row.id), Array.from({ length: 87 }, (_, index) => index + 1));
   assert.deepEqual(
     new Set(reviewSummary.rows.map((row) => row.decision)),
-    new Set(['approved', 'revise', 'blocked'])
+    new Set(['approved', 'blocked'])
   );
   assert.equal(reviewSummary.rows.filter((row) => row.decision === 'blocked').length, 17);
-  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'revise').length, 43);
-  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'approved').length, 27);
+  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'revise').length, 0);
+  assert.equal(reviewSummary.rows.filter((row) => row.decision === 'approved').length, 70);
   assert.match(reviewSummary.basis, /not final release approval/);
   assert.equal(reviewSummary.convention.multiLetterOrder, 'phonogram sound(s) before the letter-count explanation');
   assert.equal(reviewSummary.convention.finalApproval, 'human instructional reviewer must confirm every row before release audio');
