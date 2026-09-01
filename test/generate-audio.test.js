@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   PRODUCTION_PROFILE_ID,
+  PRODUCTION_MODEL,
   DEFAULT_NARRATION_INSTRUCT,
   createApprovedAudioPlan,
   createRenderManifestEntry,
@@ -145,7 +146,8 @@ test('generates approved rows with the production profile and fixed transcript p
     text: 'A.',
     language: 'en',
     engine: 'qwen_custom_voice',
-    instruct: DEFAULT_NARRATION_INSTRUCT
+    instruct: DEFAULT_NARRATION_INSTRUCT,
+    model: PRODUCTION_MODEL
   });
   assert.deepEqual(writes, [{ path: 'audio/01-a.mp3', data: [1, 2, 3] }]);
 });

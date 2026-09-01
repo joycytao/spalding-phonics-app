@@ -6,6 +6,7 @@ export const DEFAULT_VOICEBOX_URL = 'http://127.0.0.1:17493';
 export const PRODUCTION_PROFILE_ID = 'a07dbe47-2f91-4c2b-88df-0551bdaebc99';
 export const PRODUCTION_PROFILE_NAME = 'story-narrator-01';
 export const PRODUCTION_ENGINE = 'qwen_custom_voice';
+export const PRODUCTION_MODEL = '1.7B';
 export const DEFAULT_NARRATION_INSTRUCT = 'Speak at a natural, normal pace and clearly pronounce the phonogram sounds.';
 
 export function transcriptVersion(transcript) {
@@ -29,7 +30,7 @@ export function createRenderManifestEntry({
     profileName,
     profileId,
     engine,
-    model: generation.model ?? generation.model_name ?? null,
+    model: generation.model ?? generation.model_name ?? PRODUCTION_MODEL,
     generationId: generation.id ?? null,
     outputPath: transcript.audioPath,
     timestamp,
@@ -124,7 +125,8 @@ export async function runApprovedAudioBatch({
             item.profileId,
             { ttsText: item.text },
             PRODUCTION_ENGINE,
-            DEFAULT_NARRATION_INSTRUCT
+            DEFAULT_NARRATION_INSTRUCT,
+            PRODUCTION_MODEL
           ))
         },
         `Voicebox failed for ${item.symbol}`

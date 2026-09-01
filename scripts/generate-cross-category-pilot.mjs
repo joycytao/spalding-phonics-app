@@ -16,13 +16,16 @@ try {
 }
 
 const transcripts = selectCrossCategoryPilotTranscripts();
+const manifestForGeneration = process.env.FORCE_REGENERATE_PILOT === '1'
+  ? existingMetadata.filter((entry) => !transcripts.some((transcript) => transcript.audioPath === entry.outputPath))
+  : existingMetadata;
 const report = await runApprovedAudioBatch({
   transcripts,
   baseUrl,
   profileId: process.env.VOICEBOX_PROFILE_ID ?? PRODUCTION_PROFILE_ID,
   outputDirectory,
-  existingMetadata,
-  manifestEntries: existingMetadata,
+  existingMetadata: manifestForGeneration,
+  manifestEntries: manifestForGeneration,
   manifestWriter: (entries) => writeRenderManifest(manifestUrl.pathname, entries)
 });
 

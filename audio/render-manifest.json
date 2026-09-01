@@ -6,10 +6,10 @@
     "profileName": "story-narrator-01",
     "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
     "engine": "qwen_custom_voice",
-    "model": null,
-    "generationId": "e540dcb4-19e8-4f89-b382-ef6dbf485144",
+    "model": "1.7B",
+    "generationId": "31df9c33-3afc-4645-b319-2130e86b036e",
     "outputPath": "audio/01-a.mp3",
-    "timestamp": "2026-09-01T18:06:13.545Z",
+    "timestamp": "2026-09-01T21:11:15.064Z",
     "status": "completed"
   },
   {
@@ -19,10 +19,10 @@
     "profileName": "story-narrator-01",
     "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
     "engine": "qwen_custom_voice",
-    "model": null,
-    "generationId": "3f05b7d9-6a0a-4462-9d9a-392f75d839d5",
+    "model": "1.7B",
+    "generationId": "a0cea110-e374-4f1f-98a0-12608e0026de",
     "outputPath": "audio/29-th.mp3",
-    "timestamp": "2026-09-01T18:06:33.701Z",
+    "timestamp": "2026-09-01T21:11:37.185Z",
     "status": "completed"
   },
   {
@@ -32,10 +32,10 @@
     "profileName": "story-narrator-01",
     "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
     "engine": "qwen_custom_voice",
-    "model": null,
-    "generationId": "6b7ac1e6-0193-40f7-9912-11a3ea982981",
+    "model": "1.7B",
+    "generationId": "ee783713-b951-41b5-b610-a595a9025736",
     "outputPath": "audio/32-oo.mp3",
-    "timestamp": "2026-09-01T18:06:51.793Z",
+    "timestamp": "2026-09-01T21:12:08.590Z",
     "status": "completed"
   },
   {
@@ -46,9 +46,9 @@
     "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
     "engine": "qwen_custom_voice",
     "model": "1.7B",
-    "generationId": "d49c44fb-f027-4296-978d-7166ee96e090",
+    "generationId": "02c5bfca-1445-4f60-a4b5-008d20165406",
     "outputPath": "audio/52-ew.mp3",
-    "timestamp": "2026-09-01T14:02:38.718Z",
+    "timestamp": "2026-09-01T21:12:35.716Z",
     "status": "completed"
   },
   {
@@ -58,10 +58,10 @@
     "profileName": "story-narrator-01",
     "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
     "engine": "qwen_custom_voice",
-    "model": null,
-    "generationId": "1a9e234a-e88b-4c4b-b11e-6c67e7169478",
+    "model": "1.7B",
+    "generationId": "ef2dc3ef-f12b-471e-a23c-8f10e4bf698f",
     "outputPath": "audio/57-ough.mp3",
-    "timestamp": "2026-09-01T18:08:04.149Z",
+    "timestamp": "2026-09-01T21:13:18.619Z",
     "status": "completed"
   }
 ]

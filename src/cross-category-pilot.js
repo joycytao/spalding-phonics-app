@@ -1,6 +1,7 @@
 import {
   DEFAULT_NARRATION_INSTRUCT,
   PRODUCTION_ENGINE,
+  PRODUCTION_MODEL,
   PRODUCTION_PROFILE_ID,
   PRODUCTION_PROFILE_NAME,
   transcriptVersion
@@ -45,6 +46,7 @@ export function createCrossCategoryPilotReview({
       profileName: PRODUCTION_PROFILE_NAME,
       profileId: PRODUCTION_PROFILE_ID,
       engine: PRODUCTION_ENGINE,
+      model: PRODUCTION_MODEL,
       instruct: DEFAULT_NARRATION_INSTRUCT
     },
     humanChecks: ['pronunciation', 'pace', 'volume', 'cross-category consistency'],
