@@ -1,0 +1,15 @@
+[
+  {
+    "transcriptId": 52,
+    "transcriptVersion": "52:/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
+    "symbol": "ew",
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "model": "1.7B",
+    "generationId": "d49c44fb-f027-4296-978d-7166ee96e090",
+    "outputPath": "audio/52-ew.mp3",
+    "timestamp": "2026-09-01T14:02:38.718Z",
+    "status": "completed"
+  }
+]

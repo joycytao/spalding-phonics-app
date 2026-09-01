@@ -6,6 +6,7 @@ export const DEFAULT_VOICEBOX_URL = 'http://127.0.0.1:17493';
 export const PRODUCTION_PROFILE_ID = 'a07dbe47-2f91-4c2b-88df-0551bdaebc99';
 export const PRODUCTION_PROFILE_NAME = 'story-narrator-01';
 export const PRODUCTION_ENGINE = 'qwen_custom_voice';
+export const DEFAULT_NARRATION_INSTRUCT = 'Speak at a natural, normal pace and clearly pronounce the phonogram sounds.';
 
 export function transcriptVersion(transcript) {
   return `${transcript.id}:${transcript.ttsText ?? transcript.text}`;
@@ -119,7 +120,12 @@ export async function runApprovedAudioBatch({
         {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify(createPhonogramGenerationRequest(item.profileId, { ttsText: item.text }))
+          body: JSON.stringify(createPhonogramGenerationRequest(
+            item.profileId,
+            { ttsText: item.text },
+            PRODUCTION_ENGINE,
+            DEFAULT_NARRATION_INSTRUCT
+          ))
         },
         `Voicebox failed for ${item.symbol}`
       );
@@ -133,7 +139,18 @@ export async function runApprovedAudioBatch({
           undefined,
           `Voicebox could not read generation ${generation.id}`
         );
+        generation = { ...generation, ...history };
         status = history.status;
+      }
+      if (!generation.model && generation.id) {
+        const details = await requestJson(
+          fetchImpl,
+          `${baseUrl}/history/${generation.id}`,
+          undefined,
+          `Voicebox could not read generation ${generation.id}`
+        );
+        generation = { ...generation, ...details };
+        status = details.status ?? status;
       }
       if (status === 'failed') throw new Error(`Voicebox generation failed for ${item.symbol}.`);
 
