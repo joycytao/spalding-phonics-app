@@ -23,11 +23,12 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 11 | [#11 Add resumable generation and error handling](https://github.com/joycytao/spalding-phonics-app/issues/11) | #10 | Blocked by #10 |
 | 12 | [#12 Record render metadata in an audio manifest](https://github.com/joycytao/spalding-phonics-app/issues/12) | #10 | Blocked by #10 |
 | 13 | [#13 Render and approve the ew pilot audio](https://github.com/joycytao/spalding-phonics-app/issues/13) | #10, #11, #12 | Blocked by #10-#12 and approved `ew` narration |
-| 14 | [#14 Render cross-category pilot samples](https://github.com/joycytao/spalding-phonics-app/issues/14) | #13 | Blocked by #13 |
-| 15 | [#15 Batch-render all approved phonogram audio](https://github.com/joycytao/spalding-phonics-app/issues/15) | #8, #14 | Blocked by approved records and #14 |
-| 16 | [#16 Perform manual phonogram audio quality assurance](https://github.com/joycytao/spalding-phonics-app/issues/16) | #15 | Blocked by #15 |
-| 17 | [#17 Integrate transcript-backed audio into the web app](https://github.com/joycytao/spalding-phonics-app/issues/17) | #12, #16 | Blocked by #12 and #16 |
-| 18 | [#18 Verify the transcript-to-audio release pipeline](https://github.com/joycytao/spalding-phonics-app/issues/18) | #17 | Blocked by #17 |
+| 14 | [#37 Re-review all transcript narrations after the phonogram-first convention update](https://github.com/joycytao/spalding-phonics-app/issues/37) | #7, #13 | Blocked by the convention baseline and `ew` pilot review |
+| 15 | [#14 Render cross-category pilot samples](https://github.com/joycytao/spalding-phonics-app/issues/14) | #13, #37 | Blocked by #13 and the full transcript re-review |
+| 16 | [#15 Batch-render all approved phonogram audio](https://github.com/joycytao/spalding-phonics-app/issues/15) | #8, #14, #37 | Blocked by approved records, #14, and #37 |
+| 17 | [#16 Perform manual phonogram audio quality assurance](https://github.com/joycytao/spalding-phonics-app/issues/16) | #15 | Blocked by #15 |
+| 18 | [#17 Integrate transcript-backed audio into the web app](https://github.com/joycytao/spalding-phonics-app/issues/17) | #12, #16 | Blocked by #12 and #16 |
+| 19 | [#18 Verify the transcript-to-audio release pipeline](https://github.com/joycytao/spalding-phonics-app/issues/18) | #17 | Blocked by #17 |
 
 ## Insertions
 
