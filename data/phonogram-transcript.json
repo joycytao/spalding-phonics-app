@@ -10,7 +10,7 @@
         "/ah/"
       ]
     },
-    "ttsText": "A. /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+    "ttsText": "/ă/. /ā/. /ah/.  /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
     "examples": [
       {
         "sound": "/ă/",
@@ -38,7 +38,7 @@
         "/c/"
       ]
     },
-    "ttsText": "C. /c/ as in cat.",
+    "ttsText": "/c/. /c/ as in cat.",
     "examples": [
       {
         "sound": "/c/",
@@ -58,7 +58,7 @@
         "/d/"
       ]
     },
-    "ttsText": "D. /d/ as in dog.",
+    "ttsText": "/d/. /d/ as in dog.",
     "examples": [
       {
         "sound": "/d/",
@@ -78,7 +78,7 @@
         "/f/"
       ]
     },
-    "ttsText": "F. /f/ as in fish.",
+    "ttsText": "/f/. /f/ as in fish.",
     "examples": [
       {
         "sound": "/f/",
@@ -98,7 +98,7 @@
         "/g/"
       ]
     },
-    "ttsText": "G. /g/ as in gum.",
+    "ttsText": "/g/. /g/ as in gum.",
     "examples": [
       {
         "sound": "/g/",
@@ -118,7 +118,7 @@
         "/o/"
       ]
     },
-    "ttsText": "O. /o/ as in octopus.",
+    "ttsText": "/o/. /o/ as in octopus.",
     "examples": [
       {
         "sound": "/o/",
@@ -138,7 +138,7 @@
         "/s/"
       ]
     },
-    "ttsText": "S. /s/ as in sun.",
+    "ttsText": "/s/. /s/ as in sun.",
     "examples": [
       {
         "sound": "/s/",
@@ -158,7 +158,7 @@
         "/qu/"
       ]
     },
-    "ttsText": "Q U. /qu/ as in queen.",
+    "ttsText": "/qu/. /qu/ as in queen.",
     "examples": [
       {
         "sound": "/qu/",
@@ -178,7 +178,7 @@
         "/b/"
       ]
     },
-    "ttsText": "B. /b/ as in bat.",
+    "ttsText": "/b/. /b/ as in bat.",
     "examples": [
       {
         "sound": "/b/",
@@ -198,7 +198,7 @@
         "/e/"
       ]
     },
-    "ttsText": "E. /e/ as in egg.",
+    "ttsText": "/e/. /e/ as in egg.",
     "examples": [
       {
         "sound": "/e/",
@@ -218,7 +218,7 @@
         "/h/"
       ]
     },
-    "ttsText": "H. /h/ as in hat.",
+    "ttsText": "/h/. /h/ as in hat.",
     "examples": [
       {
         "sound": "/h/",
@@ -238,7 +238,7 @@
         "/i/"
       ]
     },
-    "ttsText": "I. /i/ as in igloo.",
+    "ttsText": "/i/. /i/ as in igloo.",
     "examples": [
       {
         "sound": "/i/",
@@ -258,7 +258,7 @@
         "/j/"
       ]
     },
-    "ttsText": "J. /j/ as in jam.",
+    "ttsText": "/j/. /j/ as in jam.",
     "examples": [
       {
         "sound": "/j/",
@@ -278,7 +278,7 @@
         "/k/"
       ]
     },
-    "ttsText": "K. /k/ as in kite.",
+    "ttsText": "/k/. /k/ as in kite.",
     "examples": [
       {
         "sound": "/k/",
@@ -298,7 +298,7 @@
         "/l/"
       ]
     },
-    "ttsText": "L. /l/ as in lamp.",
+    "ttsText": "/l/. /l/ as in lamp.",
     "examples": [
       {
         "sound": "/l/",
@@ -318,7 +318,7 @@
         "/m/"
       ]
     },
-    "ttsText": "M. /m/ as in map.",
+    "ttsText": "/m/. /m/ as in map.",
     "examples": [
       {
         "sound": "/m/",
@@ -338,7 +338,7 @@
         "/n/"
       ]
     },
-    "ttsText": "N. /n/ as in nest.",
+    "ttsText": "/n/. /n/ as in nest.",
     "examples": [
       {
         "sound": "/n/",
@@ -358,7 +358,7 @@
         "/p/"
       ]
     },
-    "ttsText": "P. /p/ as in pig.",
+    "ttsText": "/p/. /p/ as in pig.",
     "examples": [
       {
         "sound": "/p/",
@@ -378,7 +378,7 @@
         "/r/"
       ]
     },
-    "ttsText": "R. /r/ as in red.",
+    "ttsText": "/r/. /r/ as in red.",
     "examples": [
       {
         "sound": "/r/",
@@ -398,7 +398,7 @@
         "/t/"
       ]
     },
-    "ttsText": "T. /t/ as in top.",
+    "ttsText": "/t/. /t/ as in top.",
     "examples": [
       {
         "sound": "/t/",
@@ -418,7 +418,7 @@
         "/u/"
       ]
     },
-    "ttsText": "U. /u/ as in up.",
+    "ttsText": "/u/. /u/ as in up.",
     "examples": [
       {
         "sound": "/u/",
@@ -438,7 +438,7 @@
         "/v/"
       ]
     },
-    "ttsText": "V. /v/ as in van.",
+    "ttsText": "/v/. /v/ as in van.",
     "examples": [
       {
         "sound": "/v/",
@@ -458,7 +458,7 @@
         "/w/"
       ]
     },
-    "ttsText": "W. /w/ as in web.",
+    "ttsText": "/w/. /w/ as in web.",
     "examples": [
       {
         "sound": "/w/",
@@ -478,7 +478,7 @@
         "/x/"
       ]
     },
-    "ttsText": "X. /x/ as in fox.",
+    "ttsText": "/x/. /x/ as in fox.",
     "examples": [
       {
         "sound": "/x/",
@@ -498,7 +498,7 @@
         "/y/"
       ]
     },
-    "ttsText": "Y. /y/ as in yes.",
+    "ttsText": "/y/. /y/ as in yes.",
     "examples": [
       {
         "sound": "/y/",
@@ -518,7 +518,7 @@
         "/z/"
       ]
     },
-    "ttsText": "Z. /z/ as in zip.",
+    "ttsText": "/z/. /z/ as in zip.",
     "examples": [
       {
         "sound": "/z/",
@@ -539,7 +539,7 @@
         "/sh/"
       ]
     },
-    "ttsText": "S H. Two letters. /sh/ as in ship.",
+    "ttsText": "/sh/. Two letters. /sh/ as in ship.",
     "examples": [
       {
         "sound": "/sh/",
@@ -560,7 +560,7 @@
         "/ee/"
       ]
     },
-    "ttsText": "E E. Two letters. /ee/ as in feet.",
+    "ttsText": "/ee/. Two letters. /ee/ as in feet.",
     "examples": [
       {
         "sound": "/ee/",
@@ -582,7 +582,7 @@
         "/th/"
       ]
     },
-    "ttsText": "T H. Two letters. /th/ as in thin. /th/ as in this.",
+    "ttsText": "/th/. Two letters. /th/ as in thin. /th/ as in this.",
     "examples": [
       {
         "sound": "/th/",
@@ -607,7 +607,7 @@
         "/ow/"
       ]
     },
-    "ttsText": "O W. Two letters. /ow/ as in cow.",
+    "ttsText": "/ow/. Two letters. /ow/ as in cow.",
     "examples": [
       {
         "sound": "/ow/",
@@ -628,7 +628,7 @@
         "/ou/"
       ]
     },
-    "ttsText": "O U. Two letters. /ou/ as in out.",
+    "ttsText": "/ou/. Two letters. /ou/ as in out.",
     "examples": [
       {
         "sound": "/ou/",
@@ -650,7 +650,7 @@
         "/oo/"
       ]
     },
-    "ttsText": "O O. Two letters. /oo/ as in moon. /oo/ as in book.",
+    "ttsText": "/oo/. Two letters. /oo/ as in moon. /oo/ as in book.",
     "examples": [
       {
         "sound": "/oo/",
@@ -675,7 +675,7 @@
         "/ch/"
       ]
     },
-    "ttsText": "C H. Two letters. /ch/ as in chin.",
+    "ttsText": "/ch/. Two letters. /ch/ as in chin.",
     "examples": [
       {
         "sound": "/ch/",
@@ -696,7 +696,7 @@
         "/ar/"
       ]
     },
-    "ttsText": "A R. Two letters. /ar/ as in car.",
+    "ttsText": "/ar/. Two letters. /ar/ as in car.",
     "examples": [
       {
         "sound": "/ar/",
@@ -717,7 +717,7 @@
         "/ay/"
       ]
     },
-    "ttsText": "A Y. Two letters. /ay/ as in day.",
+    "ttsText": "/ay/. Two letters. /ay/ as in day.",
     "examples": [
       {
         "sound": "/ay/",
@@ -738,7 +738,7 @@
         "/ai/"
       ]
     },
-    "ttsText": "A I. Two letters. /ai/ as in rain.",
+    "ttsText": "/ai/. Two letters. /ai/ as in rain.",
     "examples": [
       {
         "sound": "/ai/",
@@ -759,7 +759,7 @@
         "/oy/"
       ]
     },
-    "ttsText": "O Y. Two letters. /oy/ as in boy.",
+    "ttsText": " /oy/. Two letters. /oy/ as in boy.",
     "examples": [
       {
         "sound": "/oy/",
@@ -780,7 +780,7 @@
         "/oi/"
       ]
     },
-    "ttsText": "O I. Two letters. /oi/ as in coin.",
+    "ttsText": "/oi/. Two letters. /oi/ as in coin.",
     "examples": [
       {
         "sound": "/oi/",
@@ -801,7 +801,7 @@
         "/er/"
       ]
     },
-    "ttsText": "E R. Two letters. /er/ as in her.",
+    "ttsText": " /er/. Two letters. /er/ as in her.",
     "examples": [
       {
         "sound": "/er/",
@@ -822,7 +822,7 @@
         "/ir/"
       ]
     },
-    "ttsText": "I R. Two letters. /ir/ as in bird.",
+    "ttsText": "/ir/. Two letters. /ir/ as in bird.",
     "examples": [
       {
         "sound": "/ir/",
@@ -843,7 +843,7 @@
         "/ur/"
       ]
     },
-    "ttsText": "U R. Two letters. /ur/ as in turn.",
+    "ttsText": " /ur/. Two letters. /ur/ as in turn.",
     "examples": [
       {
         "sound": "/ur/",
@@ -864,7 +864,7 @@
         "/wor/"
       ]
     },
-    "ttsText": "W O R. Three letters. /wor/ as in word.",
+    "ttsText": "/wor/. Three letters. /wor/ as in word.",
     "examples": [
       {
         "sound": "/wor/",
@@ -885,7 +885,7 @@
         "/ear/"
       ]
     },
-    "ttsText": "E A R. Three letters. /ear/ as in hear.",
+    "ttsText": " /ear/. Three letters. /ear/ as in hear.",
     "examples": [
       {
         "sound": "/ear/",
@@ -906,7 +906,7 @@
         "/ng/"
       ]
     },
-    "ttsText": "N G. Two letters. /ng/ as in sing.",
+    "ttsText": "/ng/. Two letters. /ng/ as in sing.",
     "examples": [
       {
         "sound": "/ng/",
@@ -927,7 +927,7 @@
         "/ea/"
       ]
     },
-    "ttsText": "E A. Two letters. /ea/ as in eat.",
+    "ttsText": "/ea/. Two letters. /ea/ as in eat.",
     "examples": [
       {
         "sound": "/ea/",
@@ -948,7 +948,7 @@
         "/aw/"
       ]
     },
-    "ttsText": "A W. Two letters. /aw/ as in saw.",
+    "ttsText": "/aw/. Two letters. /aw/ as in saw.",
     "examples": [
       {
         "sound": "/aw/",
@@ -969,7 +969,7 @@
         "/au/"
       ]
     },
-    "ttsText": "A U. Two letters. /au/ as in haul.",
+    "ttsText": "/au/ . Two letters. /au/ as in haul.",
     "examples": [
       {
         "sound": "/au/",
@@ -990,7 +990,7 @@
         "/or/"
       ]
     },
-    "ttsText": "O R. Two letters. /or/ as in fork.",
+    "ttsText": "/or/. Two letters. /or/ as in fork.",
     "examples": [
       {
         "sound": "/or/",
@@ -1011,7 +1011,7 @@
         "/ck/"
       ]
     },
-    "ttsText": "C K. Two letters. /ck/ as in back.",
+    "ttsText": "/ck/. Two letters. /ck/ as in back.",
     "examples": [
       {
         "sound": "/ck/",
@@ -1032,7 +1032,7 @@
         "/wh/"
       ]
     },
-    "ttsText": "W H. Two letters. /wh/ as in when.",
+    "ttsText": "/wh/. Two letters. /wh/ as in when.",
     "examples": [
       {
         "sound": "/wh/",
@@ -1053,7 +1053,7 @@
         "/ed/"
       ]
     },
-    "ttsText": "E D. Two letters. /ed/ as in jumped.",
+    "ttsText": "/ed/. Two letters. /ed/ as in jumped.",
     "examples": [
       {
         "sound": "/ed/",
@@ -1103,7 +1103,7 @@
         "/yoo/"
       ]
     },
-    "ttsText": "U I. Two letters. /oo/ as in fruit. /yoo/ as in suit. Not used at the end of a word.",
+    "ttsText": "/oo/ . Two letters. /oo/ as in fruit. /yoo/ as in suit. Not used at the end of a word.",
     "examples": [
       {
         "sound": "/oo/",
@@ -1128,7 +1128,7 @@
         "/oa/"
       ]
     },
-    "ttsText": "O A. Two letters. /oa/ as in boat.",
+    "ttsText": "/oa/ . Two letters. /oa/ as in boat.",
     "examples": [
       {
         "sound": "/oa/",
@@ -1149,7 +1149,7 @@
         "/gu/"
       ]
     },
-    "ttsText": "G U. Two letters. /gu/ as in guess.",
+    "ttsText": "/gu/ . Two letters. /gu/ as in guess.",
     "examples": [
       {
         "sound": "/gu/",
@@ -1170,7 +1170,7 @@
         "/ph/"
       ]
     },
-    "ttsText": "P H. Two letters. /ph/ as in phone.",
+    "ttsText": " ph/. Two letters. /ph/ as in phone.",
     "examples": [
       {
         "sound": "/ph/",
@@ -1196,7 +1196,7 @@
         "/ow/"
       ]
     },
-    "ttsText": "O U G H. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+    "ttsText": "/ō/. /oo/. /ŭf/ . /ŏf/. /aw/. /ow/. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
     "examples": [
       {
         "sound": "/ō/",
@@ -1237,7 +1237,7 @@
         "/oe/"
       ]
     },
-    "ttsText": "O E. Two letters. /oe/ as in toe.",
+    "ttsText": " /oe/ . Two letters. /oe/ as in toe.",
     "examples": [
       {
         "sound": "/oe/",
@@ -1258,7 +1258,7 @@
         "/ey/"
       ]
     },
-    "ttsText": "E Y. Two letters. /ey/ as in key.",
+    "ttsText": "/ey/ . Two letters. /ey/ as in key.",
     "examples": [
       {
         "sound": "/ey/",
@@ -1279,7 +1279,7 @@
         "/igh/"
       ]
     },
-    "ttsText": "I G H. Three letters. /igh/ as in night.",
+    "ttsText": " /igh/ . Three letters. /igh/ as in night.",
     "examples": [
       {
         "sound": "/igh/",
@@ -1301,7 +1301,7 @@
         "/n/"
       ]
     },
-    "ttsText": "K N. Two letters. /n/ as in knee. Beginning.",
+    "ttsText": " /n/. Two letters. /n/ as in knee. Beginning.",
     "examples": [
       {
         "sound": "/n/",
@@ -1322,7 +1322,7 @@
         "/gn/"
       ]
     },
-    "ttsText": "G N. Two letters. /gn/ as in gnat.",
+    "ttsText": "/gn/. Two letters. /gn/ as in gnat.",
     "examples": [
       {
         "sound": "/gn/",
@@ -1345,7 +1345,7 @@
         "/r/"
       ]
     },
-    "ttsText": "W R. Two letters. /r/ as in write. Not used at the end of a word. Beginning.",
+    "ttsText": "/r/. Two letters. /r/ as in write. Not used at the end of a word. Beginning.",
     "examples": [
       {
         "sound": "/r/",
@@ -1366,7 +1366,7 @@
         "/ie/"
       ]
     },
-    "ttsText": "I E. Two letters. /ie/ as in pie.",
+    "ttsText": "/ie/ . Two letters. /ie/ as in pie.",
     "examples": [
       {
         "sound": "/ie/",
@@ -1387,7 +1387,7 @@
         "/dge/"
       ]
     },
-    "ttsText": "D G E. Three letters. /dge/ as in bridge.",
+    "ttsText": "/dge/. Three letters. /dge/ as in bridge.",
     "examples": [
       {
         "sound": "/dge/",
@@ -1408,7 +1408,7 @@
         "/ei/"
       ]
     },
-    "ttsText": "E I. Two letters. /ei/ as in eight.",
+    "ttsText": "/ei/ . Two letters. /ei/ as in eight.",
     "examples": [
       {
         "sound": "/ei/",
@@ -1429,7 +1429,7 @@
         "/eigh/"
       ]
     },
-    "ttsText": "E I G H. Four letters. /eigh/ as in eight.",
+    "ttsText": "/eigh/.  Four letters. /eigh/ as in eight.",
     "examples": [
       {
         "sound": "/eigh/",
@@ -1450,7 +1450,7 @@
         "/ti/"
       ]
     },
-    "ttsText": "T I. Two letters. /ti/ as in nation.",
+    "ttsText": "/ti/. Two letters. /ti/ as in nation.",
     "examples": [
       {
         "sound": "/ti/",
@@ -1471,7 +1471,7 @@
         "/si/"
       ]
     },
-    "ttsText": "S I. Two letters. /si/ as in vision.",
+    "ttsText": "/si/ . Two letters. /si/ as in vision.",
     "examples": [
       {
         "sound": "/si/",
@@ -1492,7 +1492,7 @@
         "/ci/"
       ]
     },
-    "ttsText": "C I. Two letters. /ci/ as in special.",
+    "ttsText": " /ci/ . Two letters. /ci/ as in special.",
     "examples": [
       {
         "sound": "/ci/",
@@ -1513,7 +1513,7 @@
         "/s/"
       ]
     },
-    "ttsText": "S C I. Three letters. /s/ as in science.",
+    "ttsText": "/s/. Three letters. /s/ as in science.",
     "examples": [
       {
         "sound": "/s/",
@@ -1534,7 +1534,7 @@
         "/owr/"
       ]
     },
-    "ttsText": "O U R. Three letters. /owr/ as in pour.",
+    "ttsText": "/owr/ . Three letters. /owr/ as in pour.",
     "examples": [
       {
         "sound": "/owr/",
@@ -1555,7 +1555,7 @@
         "/yoo/"
       ]
     },
-    "ttsText": "E U. Two letters. /yoo/ as in Europe.",
+    "ttsText": "/yoo/. Two letters. /yoo/ as in Europe.",
     "examples": [
       {
         "sound": "/yoo/",
@@ -1576,7 +1576,7 @@
         "/aw/"
       ]
     },
-    "ttsText": "A U G H. Four letters. /aw/ as in caught.",
+    "ttsText": "/aw/. Four letters. /aw/ as in caught.",
     "examples": [
       {
         "sound": "/aw/",
@@ -1597,7 +1597,7 @@
         "/f/"
       ]
     },
-    "ttsText": "G H. Two letters. /f/ as in laugh.",
+    "ttsText": "/f/ . Two letters. /f/ as in laugh.",
     "examples": [
       {
         "sound": "/f/",
@@ -1618,7 +1618,7 @@
         "/k/"
       ]
     },
-    "ttsText": "Q U E. Three letters. /k/ as in unique.",
+    "ttsText": "/k/ . Three letters. /k/ as in unique.",
     "examples": [
       {
         "sound": "/k/",
@@ -1639,7 +1639,7 @@
         "/b/"
       ]
     },
-    "ttsText": "B U. Two letters. /b/ as in build.",
+    "ttsText": " /b/ . Two letters. /b/ as in build.",
     "examples": [
       {
         "sound": "/b/",
@@ -1660,7 +1660,7 @@
         "/k/"
       ]
     },
-    "ttsText": "L K. Two letters. /k/ as in walk.",
+    "ttsText": "/k/. Two letters. /k/ as in walk.",
     "examples": [
       {
         "sound": "/k/",
@@ -1681,7 +1681,7 @@
         "/m/"
       ]
     },
-    "ttsText": "M B. Two letters. /m/ as in lamb.",
+    "ttsText": "/m/ . Two letters. /m/ as in lamb.",
     "examples": [
       {
         "sound": "/m/",
@@ -1702,7 +1702,7 @@
         "/m/"
       ]
     },
-    "ttsText": "M N. Two letters. /m/ as in mnemonic.",
+    "ttsText": "/m/. Two letters. /m/ as in mnemonic.",
     "examples": [
       {
         "sound": "/m/",
@@ -1723,7 +1723,7 @@
         "/st/"
       ]
     },
-    "ttsText": "S T. Two letters. /st/ as in stop.",
+    "ttsText": "/st/ . Two letters. /st/ as in stop.",
     "examples": [
       {
         "sound": "/st/",
@@ -1744,7 +1744,7 @@
         "/th/"
       ]
     },
-    "ttsText": "T H E. Three letters. /th/ as in the.",
+    "ttsText": "/th/ . Three letters. /th/ as in the.",
     "examples": [
       {
         "sound": "/th/",
@@ -1765,7 +1765,7 @@
         "/ar/"
       ]
     },
-    "ttsText": "A R R. Three letters. /ar/ as in carry.",
+    "ttsText": "/ar/. Three letters. /ar/ as in carry.",
     "examples": [
       {
         "sound": "/ar/",
@@ -1786,7 +1786,7 @@
         "/er/"
       ]
     },
-    "ttsText": "E R R. Three letters. /er/ as in cherry.",
+    "ttsText": "/er/ . Three letters. /er/ as in cherry.",
     "examples": [
       {
         "sound": "/er/",
@@ -1807,7 +1807,7 @@
         "/sh/"
       ]
     },
-    "ttsText": "S S I. Three letters. /sh/ as in mission.",
+    "ttsText": "/sh/. Three letters. /sh/ as in mission.",
     "examples": [
       {
         "sound": "/sh/",
@@ -1828,7 +1828,7 @@
         "/ch/"
       ]
     },
-    "ttsText": "T E. Two letters. /ch/ as in nature.",
+    "ttsText": "/ch/ . Two letters. /ch/ as in nature.",
     "examples": [
       {
         "sound": "/ch/",
@@ -1849,7 +1849,7 @@
         "/j/"
       ]
     },
-    "ttsText": "D G. Two letters. /j/ as in badge.",
+    "ttsText": " /j/ . Two letters. /j/ as in badge.",
     "examples": [
       {
         "sound": "/j/",

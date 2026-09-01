@@ -1,0 +1,708 @@
+{
+  "title": "Transcript narration convention re-review",
+  "basis": "Preliminary consistency pass after the ew phonogram-first review; decisions are not final release approval.",
+  "convention": {
+    "multiLetterOrder": "phonogram sound(s) before the letter-count explanation",
+    "distinctSoundPause": "full-stop punctuation between distinct phonogram sounds",
+    "singleLetterOrder": "letter name before sound examples, matching the approved a sample",
+    "finalApproval": "human instructional reviewer must confirm every row before release audio"
+  },
+  "rows": [
+    {
+      "id": 1,
+      "symbol": "a",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 2,
+      "symbol": "c",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 3,
+      "symbol": "d",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 4,
+      "symbol": "f",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 5,
+      "symbol": "g",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 6,
+      "symbol": "o",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 7,
+      "symbol": "s",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 8,
+      "symbol": "qu",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 9,
+      "symbol": "b",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 10,
+      "symbol": "e",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 11,
+      "symbol": "h",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 12,
+      "symbol": "i",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 13,
+      "symbol": "j",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 14,
+      "symbol": "k",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 15,
+      "symbol": "l",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 16,
+      "symbol": "m",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 17,
+      "symbol": "n",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 18,
+      "symbol": "p",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 19,
+      "symbol": "r",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 20,
+      "symbol": "t",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 21,
+      "symbol": "u",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 22,
+      "symbol": "v",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 23,
+      "symbol": "w",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 24,
+      "symbol": "x",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 25,
+      "symbol": "y",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 26,
+      "symbol": "z",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the single-letter sample convention; human reviewer must confirm the sound and example wording.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 27,
+      "symbol": "sh",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 28,
+      "symbol": "ee",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 29,
+      "symbol": "th",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 30,
+      "symbol": "ow",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 31,
+      "symbol": "ou",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 32,
+      "symbol": "oo",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 33,
+      "symbol": "ch",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 34,
+      "symbol": "ar",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 35,
+      "symbol": "ay",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 36,
+      "symbol": "ai",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 37,
+      "symbol": "oy",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 38,
+      "symbol": "oi",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 39,
+      "symbol": "er",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 40,
+      "symbol": "ir",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 41,
+      "symbol": "ur",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 42,
+      "symbol": "wor",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 43,
+      "symbol": "ear",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 44,
+      "symbol": "ng",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 45,
+      "symbol": "ea",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 46,
+      "symbol": "aw",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 47,
+      "symbol": "au",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 48,
+      "symbol": "or",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 49,
+      "symbol": "ck",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 50,
+      "symbol": "wh",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 51,
+      "symbol": "ed",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 52,
+      "symbol": "ew",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 53,
+      "symbol": "ui",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 54,
+      "symbol": "oa",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 55,
+      "symbol": "gu",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 56,
+      "symbol": "ph",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 57,
+      "symbol": "ough",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 58,
+      "symbol": "oe",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 59,
+      "symbol": "ey",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 60,
+      "symbol": "igh",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 61,
+      "symbol": "kn",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 62,
+      "symbol": "gn",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 63,
+      "symbol": "wr",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 64,
+      "symbol": "ie",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 65,
+      "symbol": "dge",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 66,
+      "symbol": "ei",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 67,
+      "symbol": "eigh",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 68,
+      "symbol": "ti",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 69,
+      "symbol": "si",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 70,
+      "symbol": "ci",
+      "currentStatus": "approved",
+      "decision": "approved",
+      "reason": "Matches the preliminary phonogram-first order; human reviewer must confirm notation, examples, and pauses.",
+      "evidence": "https://valleyacademy.com/parents/student-resources/phonogram-helper/"
+    },
+    {
+      "id": 71,
+      "symbol": "sci",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 72,
+      "symbol": "our",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 73,
+      "symbol": "eu",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 74,
+      "symbol": "augh",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 75,
+      "symbol": "gh",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 76,
+      "symbol": "que",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 77,
+      "symbol": "bu",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 78,
+      "symbol": "lk",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 79,
+      "symbol": "mb",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 80,
+      "symbol": "mn",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 81,
+      "symbol": "st",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 82,
+      "symbol": "the",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 83,
+      "symbol": "arr",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 84,
+      "symbol": "err",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 85,
+      "symbol": "ssi",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 86,
+      "symbol": "te",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    },
+    {
+      "id": 87,
+      "symbol": "dg",
+      "currentStatus": "blocked",
+      "decision": "blocked",
+      "reason": "Existing transcript is blocked and is not eligible for release audio.",
+      "evidence": "Unverified working draft; canonical curriculum source is missing."
+    }
+  ]
+}
