@@ -6,7 +6,7 @@ export const DEFAULT_VOICEBOX_URL = 'http://127.0.0.1:17493';
 export const PRODUCTION_PROFILE_ID = 'a07dbe47-2f91-4c2b-88df-0551bdaebc99';
 export const PRODUCTION_PROFILE_NAME = 'story-narrator-01';
 export const PRODUCTION_ENGINE = 'qwen_custom_voice';
-export const DEFAULT_NARRATION_INSTRUCT = 'Speak slowly and clearly, especially when pronouncing phonogram sounds.';
+export const DEFAULT_NARRATION_INSTRUCT = 'Speak at a natural, normal pace and clearly pronounce the phonogram sounds.';
 
 export function transcriptVersion(transcript) {
   return `${transcript.id}:${transcript.ttsText ?? transcript.text}`;
