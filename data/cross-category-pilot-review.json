@@ -1,0 +1,94 @@
+{
+  "referenceIssue": 14,
+  "generatedAt": "2026-09-01T18:08:04.151Z",
+  "reviewStatus": "pending_human_review",
+  "productionSettings": {
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "instruct": "Speak at a natural, normal pace and clearly pronounce the phonogram sounds."
+  },
+  "humanChecks": [
+    "pronunciation",
+    "pace",
+    "volume",
+    "cross-category consistency"
+  ],
+  "samples": [
+    {
+      "id": 1,
+      "symbol": "a",
+      "category": "single-letter",
+      "transcriptVersion": "1:/ă/. /ā/. /ah/.  /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+      "audioPath": "audio/01-a.mp3",
+      "generationId": "e540dcb4-19e8-4f89-b382-ef6dbf485144",
+      "reviewStatus": "pending_human_review",
+      "checks": {
+        "pronunciation": "pending",
+        "pace": "pending",
+        "volume": "pending",
+        "consistency": "pending"
+      }
+    },
+    {
+      "id": 29,
+      "symbol": "th",
+      "category": "multi-letter",
+      "transcriptVersion": "29:/th/. Two letters. /th/ as in thin. /th/ as in this.",
+      "audioPath": "audio/29-th.mp3",
+      "generationId": "3f05b7d9-6a0a-4462-9d9a-392f75d839d5",
+      "reviewStatus": "pending_human_review",
+      "checks": {
+        "pronunciation": "pending",
+        "pace": "pending",
+        "volume": "pending",
+        "consistency": "pending"
+      }
+    },
+    {
+      "id": 32,
+      "symbol": "oo",
+      "category": "multi-sound",
+      "transcriptVersion": "32:/oo/. Two letters. /oo/ as in moon. /oo/ as in book.",
+      "audioPath": "audio/32-oo.mp3",
+      "generationId": "6b7ac1e6-0193-40f7-9912-11a3ea982981",
+      "reviewStatus": "pending_human_review",
+      "checks": {
+        "pronunciation": "pending",
+        "pace": "pending",
+        "volume": "pending",
+        "consistency": "pending"
+      }
+    },
+    {
+      "id": 52,
+      "symbol": "ew",
+      "category": "multi-sound",
+      "transcriptVersion": "52:/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
+      "audioPath": "audio/52-ew.mp3",
+      "generationId": "d49c44fb-f027-4296-978d-7166ee96e090",
+      "reviewStatus": "pending_human_review",
+      "checks": {
+        "pronunciation": "pending",
+        "pace": "pending",
+        "volume": "pending",
+        "consistency": "pending"
+      }
+    },
+    {
+      "id": 57,
+      "symbol": "ough",
+      "category": "complex",
+      "transcriptVersion": "57:/ō/. /oo/. /ŭf/ . /ŏf/. /aw/. /ow/. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+      "audioPath": "audio/57-ough.mp3",
+      "generationId": "1a9e234a-e88b-4c4b-b11e-6c67e7169478",
+      "reviewStatus": "pending_human_review",
+      "checks": {
+        "pronunciation": "pending",
+        "pace": "pending",
+        "volume": "pending",
+        "consistency": "pending"
+      }
+    }
+  ]
+}

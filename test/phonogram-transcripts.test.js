@@ -9,6 +9,8 @@ import {
 import { phonograms } from '../src/phonograms.js';
 import reviewSamples from '../data/transcript-review-samples.json' with { type: 'json' };
 import reviewSummary from '../data/transcript-review-summary.json' with { type: 'json' };
+import crossCategoryPilotReview from '../data/cross-category-pilot-review.json' with { type: 'json' };
+import { CROSS_CATEGORY_PILOT_SYMBOLS, selectCrossCategoryPilotTranscripts } from '../src/cross-category-pilot.js';
 
 const transcriptSkeleton = JSON.parse(
   readFileSync(new URL('../data/phonogram-transcript.json', import.meta.url), 'utf8')
@@ -250,6 +252,20 @@ test('representative transcript review package covers the requested categories',
     assert.ok(sample.examples.length > 0);
     assert.equal(sample.reviewStatus, 'approved');
     assert.ok(sample.reviewQuestions.length > 0);
+  }
+});
+
+test('cross-category pilot selects approved canonical transcripts and records human checks', () => {
+  const selected = selectCrossCategoryPilotTranscripts();
+  assert.deepEqual(selected.map(({ symbol }) => symbol), CROSS_CATEGORY_PILOT_SYMBOLS);
+  assert.deepEqual(selected.map(({ id }) => id), [1, 29, 32, 52, 57]);
+  assert.deepEqual(crossCategoryPilotReview.samples.map(({ symbol }) => symbol), CROSS_CATEGORY_PILOT_SYMBOLS);
+  assert.equal(crossCategoryPilotReview.reviewStatus, 'pending_human_review');
+  assert.deepEqual(crossCategoryPilotReview.humanChecks, ['pronunciation', 'pace', 'volume', 'cross-category consistency']);
+  assert.deepEqual(reviewSamples.samples.map(({ ttsText }) => ttsText), selected.map(({ ttsText }) => ttsText));
+  for (const sample of crossCategoryPilotReview.samples) {
+    assert.equal(sample.reviewStatus, 'pending_human_review');
+    assert.equal(sample.generationId !== null, true);
   }
 });
 

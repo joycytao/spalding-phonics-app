@@ -1,5 +1,44 @@
 [
   {
+    "transcriptId": 1,
+    "transcriptVersion": "1:/ă/. /ā/. /ah/.  /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+    "symbol": "a",
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "model": null,
+    "generationId": "e540dcb4-19e8-4f89-b382-ef6dbf485144",
+    "outputPath": "audio/01-a.mp3",
+    "timestamp": "2026-09-01T18:06:13.545Z",
+    "status": "completed"
+  },
+  {
+    "transcriptId": 29,
+    "transcriptVersion": "29:/th/. Two letters. /th/ as in thin. /th/ as in this.",
+    "symbol": "th",
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "model": null,
+    "generationId": "3f05b7d9-6a0a-4462-9d9a-392f75d839d5",
+    "outputPath": "audio/29-th.mp3",
+    "timestamp": "2026-09-01T18:06:33.701Z",
+    "status": "completed"
+  },
+  {
+    "transcriptId": 32,
+    "transcriptVersion": "32:/oo/. Two letters. /oo/ as in moon. /oo/ as in book.",
+    "symbol": "oo",
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "model": null,
+    "generationId": "6b7ac1e6-0193-40f7-9912-11a3ea982981",
+    "outputPath": "audio/32-oo.mp3",
+    "timestamp": "2026-09-01T18:06:51.793Z",
+    "status": "completed"
+  },
+  {
     "transcriptId": 52,
     "transcriptVersion": "52:/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
     "symbol": "ew",
@@ -10,6 +49,19 @@
     "generationId": "d49c44fb-f027-4296-978d-7166ee96e090",
     "outputPath": "audio/52-ew.mp3",
     "timestamp": "2026-09-01T14:02:38.718Z",
+    "status": "completed"
+  },
+  {
+    "transcriptId": 57,
+    "transcriptVersion": "57:/ō/. /oo/. /ŭf/ . /ŏf/. /aw/. /ow/. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+    "symbol": "ough",
+    "profileName": "story-narrator-01",
+    "profileId": "a07dbe47-2f91-4c2b-88df-0551bdaebc99",
+    "engine": "qwen_custom_voice",
+    "model": null,
+    "generationId": "1a9e234a-e88b-4c4b-b11e-6c67e7169478",
+    "outputPath": "audio/57-ough.mp3",
+    "timestamp": "2026-09-01T18:08:04.149Z",
     "status": "completed"
   }
 ]

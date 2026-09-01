@@ -40,6 +40,8 @@ Each attempted render also updates `audio/render-manifest.json` with the transcr
 
 To render only the approved `ew` pilot for instructional comparison, run `npm run audio:pilot:ew`. Compare `audio/52-ew.mp3` with the reference generation recorded in Issue #13; keep the transcript approval decision human-owned.
 
+To render the cross-category pilot for the approved canonical transcripts `a`, `th`, `oo`, `ew`, and `ough`, run `npm run audio:pilot:cross-category`. The command updates `audio/render-manifest.json` and `data/cross-category-pilot-review.json`; the latter records the fixed production settings and keeps pronunciation, pace, volume, and cross-category consistency pending human review before the full batch.
+
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
 Before generating audio, verify that Voicebox is reachable and the production profile is available:

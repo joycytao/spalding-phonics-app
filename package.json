@@ -6,6 +6,7 @@
     "test": "node --test",
     "transcript:review:summary": "node scripts/generate-transcript-review-summary.mjs",
     "voicebox:preflight": "node scripts/voicebox-preflight.mjs",
-    "audio:pilot:ew": "node scripts/generate-ew-pilot.mjs"
+    "audio:pilot:ew": "node scripts/generate-ew-pilot.mjs",
+    "audio:pilot:cross-category": "node scripts/generate-cross-category-pilot.mjs"
   }
 }

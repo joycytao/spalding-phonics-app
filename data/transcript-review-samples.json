@@ -16,7 +16,7 @@
       "symbol": "a",
       "group": "single",
       "cuePhrases": {"sounds": ["/ă/", "/ā/", "/ah/"]},
-      "ttsText": "A. /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
+      "ttsText": "/ă/. /ā/. /ah/.  /ă/ as in apple. /ā/ as in apron. /ah/ as in father.",
       "examples": [
         {"sound": "/ă/", "word": "apple"},
         {"sound": "/ā/", "word": "apron"},
@@ -36,7 +36,7 @@
       "symbol": "th",
       "group": "multi",
       "cuePhrases": {"letterCount": "two letters", "sounds": ["/th/", "/th/"]},
-      "ttsText": "T H. Two letters. /th/ as in thin. /th/ as in this.",
+      "ttsText": "/th/. Two letters. /th/ as in thin. /th/ as in this.",
       "examples": [
         {"sound": "/th/", "word": "thin"},
         {"sound": "/th/", "word": "this"}
@@ -55,7 +55,7 @@
       "symbol": "oo",
       "group": "multi",
       "cuePhrases": {"letterCount": "two letters", "sounds": ["/oo/", "/oo/"]},
-      "ttsText": "O O. Two letters. /oo/ as in moon. /oo/ as in book.",
+      "ttsText": "/oo/. Two letters. /oo/ as in moon. /oo/ as in book.",
       "examples": [
         {"sound": "/oo/", "word": "moon"},
         {"sound": "/oo/", "word": "book"}
@@ -78,7 +78,7 @@
         "useRestriction": "used at the end of a word",
         "sounds": ["/oo/", "/yoo/"]
       },
-      "ttsText": "E W. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
+      "ttsText": "/oo/. /yoo/. Two letters. /oo/ as in grew. /yoo/ as in new. Used at the end of a word.",
       "examples": [
         {"sound": "/oo/", "word": "grew"},
         {"sound": "/yoo/", "word": "new"}
@@ -100,7 +100,7 @@
         "letterCount": "four letters",
         "sounds": ["/ō/", "/oo/", "/ŭf/", "/ŏf/", "/aw/", "/ow/"]
       },
-      "ttsText": "O U G H. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
+      "ttsText": "/ō/. /oo/. /ŭf/ . /ŏf/. /aw/. /ow/. Four letters. /ō/ as in though. /oo/ as in through. /ŭf/ as in rough. /ŏf/ as in cough. /aw/ as in thought. /ow/ as in bough.",
       "examples": [
         {"sound": "/ō/", "word": "though"},
         {"sound": "/oo/", "word": "through"},
