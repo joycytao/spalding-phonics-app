@@ -9,6 +9,7 @@ import {
 import { phonograms } from '../src/phonograms.js';
 import reviewSamples from '../data/transcript-review-samples.json' with { type: 'json' };
 import reviewSummary from '../data/transcript-review-summary.json' with { type: 'json' };
+import audioQaReview from '../data/audio-qa-review.json' with { type: 'json' };
 
 const transcriptSkeleton = JSON.parse(
   readFileSync(new URL('../data/phonogram-transcript.json', import.meta.url), 'utf8')
@@ -266,4 +267,35 @@ test('full transcript review summary covers every row without changing release s
   assert.match(reviewSummary.basis, /not final release approval/);
   assert.equal(reviewSummary.convention.multiLetterOrder, 'phonogram sound(s) before the letter-count explanation');
   assert.equal(reviewSummary.convention.finalApproval, 'human instructional reviewer must confirm every row before release audio');
+});
+
+test('audio QA review records a decision for every approved rendered file', () => {
+  assert.equal(audioQaReview.reviewedCount, 70);
+  assert.equal(audioQaReview.rows.length, 70);
+  assert.equal(audioQaReview.decision, 'approved');
+  assert.deepEqual(audioQaReview.checks, [
+    'symbolNaming',
+    'sounds',
+    'exampleWords',
+    'volume',
+    'pausesClippingSilence'
+  ]);
+
+  const approvedRows = transcriptSkeleton.filter((record) => record.reviewStatus === 'approved');
+  assert.deepEqual(audioQaReview.rows.map((row) => row.id), approvedRows.map((record) => record.id));
+
+  for (const [index, row] of audioQaReview.rows.entries()) {
+    const transcript = approvedRows[index];
+    assert.equal(row.symbol, transcript.symbol);
+    assert.equal(row.audioPath, transcript.audioPath);
+    assert.ok(readFileSync(new URL(`../${row.audioPath}`, import.meta.url)), `${row.audioPath} is missing`);
+    assert.equal(row.status, 'passed');
+    assert.deepEqual(row.results, {
+      symbolNaming: 'passed',
+      sounds: 'passed',
+      exampleWords: 'passed',
+      volume: 'passed',
+      pausesClippingSilence: 'passed'
+    });
+  }
 });

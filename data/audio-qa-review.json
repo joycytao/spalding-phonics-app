@@ -1,0 +1,927 @@
+{
+  "title": "Manual phonogram audio quality assurance",
+  "reviewedAt": "2026-09-03",
+  "reviewer": "project owner",
+  "basis": "Project owner listened to all generated 1-70 audio files and confirmed satisfaction.",
+  "decision": "approved",
+  "reviewedCount": 70,
+  "checks": [
+    "symbolNaming",
+    "sounds",
+    "exampleWords",
+    "volume",
+    "pausesClippingSilence"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "symbol": "a",
+      "audioPath": "audio/01-a.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 2,
+      "symbol": "c",
+      "audioPath": "audio/02-c.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 3,
+      "symbol": "d",
+      "audioPath": "audio/03-d.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 4,
+      "symbol": "f",
+      "audioPath": "audio/04-f.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 5,
+      "symbol": "g",
+      "audioPath": "audio/05-g.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 6,
+      "symbol": "o",
+      "audioPath": "audio/06-o.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 7,
+      "symbol": "s",
+      "audioPath": "audio/07-s.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 8,
+      "symbol": "qu",
+      "audioPath": "audio/08-qu.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 9,
+      "symbol": "b",
+      "audioPath": "audio/09-b.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 10,
+      "symbol": "e",
+      "audioPath": "audio/10-e.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 11,
+      "symbol": "h",
+      "audioPath": "audio/11-h.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 12,
+      "symbol": "i",
+      "audioPath": "audio/12-i.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 13,
+      "symbol": "j",
+      "audioPath": "audio/13-j.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 14,
+      "symbol": "k",
+      "audioPath": "audio/14-k.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 15,
+      "symbol": "l",
+      "audioPath": "audio/15-l.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 16,
+      "symbol": "m",
+      "audioPath": "audio/16-m.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 17,
+      "symbol": "n",
+      "audioPath": "audio/17-n.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 18,
+      "symbol": "p",
+      "audioPath": "audio/18-p.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 19,
+      "symbol": "r",
+      "audioPath": "audio/19-r.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 20,
+      "symbol": "t",
+      "audioPath": "audio/20-t.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 21,
+      "symbol": "u",
+      "audioPath": "audio/21-u.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 22,
+      "symbol": "v",
+      "audioPath": "audio/22-v.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 23,
+      "symbol": "w",
+      "audioPath": "audio/23-w.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 24,
+      "symbol": "x",
+      "audioPath": "audio/24-x.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 25,
+      "symbol": "y",
+      "audioPath": "audio/25-y.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 26,
+      "symbol": "z",
+      "audioPath": "audio/26-z.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 27,
+      "symbol": "sh",
+      "audioPath": "audio/27-sh.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 28,
+      "symbol": "ee",
+      "audioPath": "audio/28-ee.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 29,
+      "symbol": "th",
+      "audioPath": "audio/29-th.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 30,
+      "symbol": "ow",
+      "audioPath": "audio/30-ow.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 31,
+      "symbol": "ou",
+      "audioPath": "audio/31-ou.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 32,
+      "symbol": "oo",
+      "audioPath": "audio/32-oo.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 33,
+      "symbol": "ch",
+      "audioPath": "audio/33-ch.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 34,
+      "symbol": "ar",
+      "audioPath": "audio/34-ar.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 35,
+      "symbol": "ay",
+      "audioPath": "audio/35-ay.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 36,
+      "symbol": "ai",
+      "audioPath": "audio/36-ai.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 37,
+      "symbol": "oy",
+      "audioPath": "audio/37-oy.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 38,
+      "symbol": "oi",
+      "audioPath": "audio/38-oi.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 39,
+      "symbol": "er",
+      "audioPath": "audio/39-er.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 40,
+      "symbol": "ir",
+      "audioPath": "audio/40-ir.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 41,
+      "symbol": "ur",
+      "audioPath": "audio/41-ur.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 42,
+      "symbol": "wor",
+      "audioPath": "audio/42-wor.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 43,
+      "symbol": "ear",
+      "audioPath": "audio/43-ear.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 44,
+      "symbol": "ng",
+      "audioPath": "audio/44-ng.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 45,
+      "symbol": "ea",
+      "audioPath": "audio/45-ea.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 46,
+      "symbol": "aw",
+      "audioPath": "audio/46-aw.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 47,
+      "symbol": "au",
+      "audioPath": "audio/47-au.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 48,
+      "symbol": "or",
+      "audioPath": "audio/48-or.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 49,
+      "symbol": "ck",
+      "audioPath": "audio/49-ck.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 50,
+      "symbol": "wh",
+      "audioPath": "audio/50-wh.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 51,
+      "symbol": "ed",
+      "audioPath": "audio/51-ed.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 52,
+      "symbol": "ew",
+      "audioPath": "audio/52-ew.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 53,
+      "symbol": "ui",
+      "audioPath": "audio/53-ui.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 54,
+      "symbol": "oa",
+      "audioPath": "audio/54-oa.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 55,
+      "symbol": "gu",
+      "audioPath": "audio/55-gu.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 56,
+      "symbol": "ph",
+      "audioPath": "audio/56-ph.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 57,
+      "symbol": "ough",
+      "audioPath": "audio/57-ough.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 58,
+      "symbol": "oe",
+      "audioPath": "audio/58-oe.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 59,
+      "symbol": "ey",
+      "audioPath": "audio/59-ey.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 60,
+      "symbol": "igh",
+      "audioPath": "audio/60-igh.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 61,
+      "symbol": "kn",
+      "audioPath": "audio/61-kn.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 62,
+      "symbol": "gn",
+      "audioPath": "audio/62-gn.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 63,
+      "symbol": "wr",
+      "audioPath": "audio/63-wr.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 64,
+      "symbol": "ie",
+      "audioPath": "audio/64-ie.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 65,
+      "symbol": "dge",
+      "audioPath": "audio/65-dge.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 66,
+      "symbol": "ei",
+      "audioPath": "audio/66-ei.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 67,
+      "symbol": "eigh",
+      "audioPath": "audio/67-eigh.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 68,
+      "symbol": "ti",
+      "audioPath": "audio/68-ti.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 69,
+      "symbol": "si",
+      "audioPath": "audio/69-si.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    },
+    {
+      "id": 70,
+      "symbol": "ci",
+      "audioPath": "audio/70-ci.mp3",
+      "status": "passed",
+      "results": {
+        "symbolNaming": "passed",
+        "sounds": "passed",
+        "exampleWords": "passed",
+        "volume": "passed",
+        "pausesClippingSilence": "passed"
+      }
+    }
+  ]
+}

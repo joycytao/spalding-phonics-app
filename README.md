@@ -42,6 +42,14 @@ To render only the approved `ew` pilot for instructional comparison, run `npm ru
 
 Transcript content that still needs instructional review is marked in `data/phonogram-transcript.json` before release.
 
+After listening to the approved local audio, regenerate the auditable QA record with:
+
+```sh
+npm run audio:qa:review
+```
+
+The command writes `data/audio-qa-review.json` with one passed/needs-re-render decision per rendered file and separate results for symbol naming, sounds, example words, volume, and pauses/clipping/silence. It covers only the 70 approved rows; the 17 blocked rows remain excluded from release audio.
+
 Before generating audio, verify that Voicebox is reachable and the production profile is available:
 
 ```sh
