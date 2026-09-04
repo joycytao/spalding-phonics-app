@@ -29,6 +29,10 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 17 | [#16 Perform manual phonogram audio quality assurance](https://github.com/joycytao/spalding-phonics-app/issues/16) | #15 | Blocked by #15 |
 | 18 | [#17 Integrate transcript-backed audio into the web app](https://github.com/joycytao/spalding-phonics-app/issues/17) | #12, #16 | Blocked by #12 and #16 |
 | 19 | [#18 Verify the transcript-to-audio release pipeline](https://github.com/joycytao/spalding-phonics-app/issues/18) | #17 | Blocked by #17 |
+| 20 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18 | Pending human QA |
+| 21 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18 | Pending human QA |
+| 22 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18 | Pending human QA |
+| 23 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
 
 ## Insertions
 
