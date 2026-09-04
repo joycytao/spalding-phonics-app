@@ -29,11 +29,17 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 17 | [#16 Perform manual phonogram audio quality assurance](https://github.com/joycytao/spalding-phonics-app/issues/16) | #15 | Blocked by #15 |
 | 18 | [#17 Integrate transcript-backed audio into the web app](https://github.com/joycytao/spalding-phonics-app/issues/17) | #12, #16 | Blocked by #12 and #16 |
 | 19 | [#18 Verify the transcript-to-audio release pipeline](https://github.com/joycytao/spalding-phonics-app/issues/18) | #17 | Blocked by #17 |
-| 20 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18 | Pending human QA |
-| 21 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18 | Pending human QA |
-| 22 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18 | Pending human QA |
-| 23 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
+| 20 | [#59 Implement single-flight audio playback lifecycle guard](https://github.com/joycytao/spalding-phonics-app/issues/59) | None | Ready |
+| 21 | [#60 Implement automatic playback and gated controls in Start Practice](https://github.com/joycytao/spalding-phonics-app/issues/60) | #59 | Blocked by #59 |
+| 22 | [#62 Simplify Start Exam check and self-check flow](https://github.com/joycytao/spalding-phonics-app/issues/62) | #59 | Blocked by #59 |
+| 23 | [#61 Implement automatic playback and completion flow in Review](https://github.com/joycytao/spalding-phonics-app/issues/61) | #59 | Blocked by #59 and product decision |
+| 24 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #60, #53 | Pending human QA after Start Practice behavior |
+| 25 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #62, #51 | Pending human QA after Start Exam behavior |
+| 26 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18, #61 | Pending human QA after Review behavior |
+| 27 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
 
 ## Insertions
+
+The #59–#62 rows are inserted before the existing post-release QA stories because the updated playback contract and mode-specific behavior must be implemented before QA can re-run Start Practice, Start Exam, and Review. The new Review ticket is explicitly blocked on a product decision because the requested final `Finish` action conflicts with the current transition into Review Exam.
 
 When a new issue is necessary, insert a row before the first affected dependent issue, state the reason for the insertion, and revise all impacted dependency entries. The agent must then update GitHub issue descriptions and visible ordering references in the same change.
