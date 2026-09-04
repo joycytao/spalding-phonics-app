@@ -31,13 +31,14 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 19 | [#18 Verify the transcript-to-audio release pipeline](https://github.com/joycytao/spalding-phonics-app/issues/18) | #17 | Blocked by #17 |
 | 20 | [#50 Implement playback-gated Next button in Start Practice](https://github.com/joycytao/spalding-phonics-app/issues/50) | None | Ready |
 | 21 | [#51 Implement playback-gated Check button in Start Exam](https://github.com/joycytao/spalding-phonics-app/issues/51) | None | Ready |
-| 22 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50 | Pending human QA after #50 |
-| 23 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #51 | Pending human QA after #51 |
-| 24 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18 | Pending human QA |
-| 25 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
+| 22 | [#53 Fix final-card Next navigation in Start Practice](https://github.com/joycytao/spalding-phonics-app/issues/53) | None | Ready |
+| 23 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50, #53 | Pending human QA after #50 and #53 |
+| 24 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #51 | Pending human QA after #51 |
+| 25 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18 | Pending human QA |
+| 26 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
 
 ## Insertions
 
 When a new issue is necessary, insert a row before the first affected dependent issue, state the reason for the insertion, and revise all impacted dependency entries. The agent must then update GitHub issue descriptions and visible ordering references in the same change.
 
-The #50 and #51 rows were inserted before the existing post-release QA stories because they are implementation changes to the Practice and Exam flows. The affected #45 and #46 QA stories now explicitly wait for their corresponding behavior changes; #47 and #48 are unaffected.
+The #50, #51, and #53 rows were inserted before the existing post-release QA stories because they are implementation changes to the Practice and Exam flows. The affected #45 and #46 QA stories now explicitly wait for their corresponding behavior changes; #47 and #48 are unaffected.
