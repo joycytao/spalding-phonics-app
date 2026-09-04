@@ -22,6 +22,10 @@ export function advance(session) {
   return { ...session, index: session.index + 1 };
 }
 
+export function getPracticeNavigationAction(session) {
+  return session.mode === 'practice' && session.index === session.items.length - 1 ? 'finish' : 'next';
+}
+
 export function recordExamDecision(session, isCorrect) {
   const current = session.items[session.index];
   return {
