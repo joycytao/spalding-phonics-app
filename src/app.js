@@ -2,7 +2,7 @@ import { playAudio } from './audio.js';
 import { groups, phonograms } from './phonograms.js';
 import { createProgressStore } from './progress-store.js';
 import { advance, createSession, recordExamDecision } from './session.js';
-import { isPracticeNextDisabled } from './audio-controls.js';
+import { isExamCheckDisabled, isPracticeNextDisabled } from './audio-controls.js';
 
 const app = document.querySelector('#app');
 const store = createProgressStore(window.localStorage);
@@ -45,7 +45,8 @@ function renderCard() {
   const action = state.heard ? 'replay' : 'listen';
   const label = state.heard ? 'Play again' : 'Listen to sounds';
   const nextDisabled = isPracticeNextDisabled(state.audioState);
-  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button" data-action="${action}" aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${state.checked ? 'is-disabled' : ''}" data-action="check" ${state.checked ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final ? '<span class="nav-spacer"></span>' : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
+  const checkDisabled = state.checked || isExamCheckDisabled(state.audioState);
+  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button" data-action="${action}" aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final ? '<span class="nav-spacer"></span>' : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
 }
 
 function renderResult() {
