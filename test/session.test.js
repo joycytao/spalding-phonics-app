@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { advance, createSession, orderedSelection, recordExamDecision } from '../src/session.js';
+import { advance, createSession, getPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
 
 const phonograms = [
   { id: 1, symbol: 'a' },
@@ -16,6 +16,24 @@ test('does not advance past the final phonogram', () => {
   const session = createSession([3], phonograms, 'practice');
   assert.equal(advance(session).index, 0);
   assert.equal(advance(session).isComplete, true);
+});
+
+test('uses Finish on the final single-letter Practice card', () => {
+  const phonograms = [{ id: 26, symbol: 'z' }];
+  const session = createSession([26], phonograms, 'practice');
+  assert.equal(getPracticeNavigationAction(session), 'finish');
+});
+
+test('uses Finish on the final multi-letter Practice card', () => {
+  const phonograms = [{ id: 69, symbol: 'ce' }, { id: 70, symbol: 'ci' }];
+  const session = createSession([69, 70], phonograms, 'practice');
+  assert.equal(getPracticeNavigationAction({ ...session, index: 1 }), 'finish');
+});
+
+test('keeps Next for non-final and review-practice cards', () => {
+  const phonograms = [{ id: 26, symbol: 'z' }, { id: 70, symbol: 'ci' }];
+  assert.equal(getPracticeNavigationAction(createSession([26, 70], phonograms, 'practice')), 'next');
+  assert.equal(getPracticeNavigationAction(createSession([70], phonograms, 'review-practice')), 'next');
 });
 
 test('adds correct answer to an exam score', () => {

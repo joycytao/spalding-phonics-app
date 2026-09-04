@@ -1,7 +1,7 @@
 import { playAudio } from './audio.js';
 import { groups, phonograms } from './phonograms.js';
 import { createProgressStore } from './progress-store.js';
-import { advance, createSession, recordExamDecision } from './session.js';
+import { advance, createSession, getPracticeNavigationAction, recordExamDecision } from './session.js';
 import { isExamCheckDisabled, isPracticeNextDisabled } from './audio-controls.js';
 
 const app = document.querySelector('#app');
@@ -42,11 +42,12 @@ function renderCard() {
   const isExam = state.session.mode === 'exam' || state.session.mode === 'review-exam';
   const shown = !isExam || state.checked;
   const final = state.session.index === state.session.items.length - 1;
+  const practiceNavigation = getPracticeNavigationAction(state.session);
   const action = state.heard ? 'replay' : 'listen';
   const label = state.heard ? 'Play again' : 'Listen to sounds';
   const nextDisabled = isPracticeNextDisabled(state.audioState);
   const checkDisabled = state.checked || isExamCheckDisabled(state.audioState);
-  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button" data-action="${action}" aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final ? '<span class="nav-spacer"></span>' : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
+  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button" data-action="${action}" aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final && practiceNavigation === 'finish' ? `<button class="round-button next" data-action="finish" aria-label="Finish practice">${icon.next}<small>Finish</small></button>` : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
 }
 
 function renderResult() {
@@ -117,6 +118,7 @@ app.addEventListener('click', (event) => {
   if (action === 'start-session') startSession(state.selectedIds, state.mode);
   if (action === 'listen' || action === 'replay') listen();
   if (action === 'check') renderDecision();
+  if (action === 'finish') { state = { ...state, screen: 'home', session: null }; render(); }
   if (action === 'next') { const next = advance(state.session); if (next.isComplete) { if (next.mode === 'review-practice') { startSession(next.items.map((item) => item.id), 'review-exam'); return; } state = { ...state, session: next, screen: next.mode === 'practice' ? 'home' : 'result' }; } else { state = { ...state, session: next, heard: false, audioState: 'idle', checked: false, error: '' }; } render(); }
   if (action === 'start-review') { const ids = store.getReviewQueue(); if (!ids.length) { state = { ...state, screen: 'review-empty' }; render(); } else startSession(ids, 'review-practice'); }
 });
