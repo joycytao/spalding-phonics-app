@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { advance, createSession, getPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
+import { advance, createSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
 
 const phonograms = [
   { id: 1, symbol: 'a' },
@@ -34,6 +34,11 @@ test('keeps Next for non-final and review-practice cards', () => {
   const phonograms = [{ id: 26, symbol: 'z' }, { id: 70, symbol: 'ci' }];
   assert.equal(getPracticeNavigationAction(createSession([26, 70], phonograms, 'practice')), 'next');
   assert.equal(getPracticeNavigationAction(createSession([70], phonograms, 'review-practice')), 'next');
+});
+
+test('uses Finish on the final Review Practice card', () => {
+  const session = createSession([1], phonograms, 'review-practice');
+  assert.equal(getReviewPracticeNavigationAction(session), 'finish');
 });
 
 test('adds correct answer to an exam score', () => {
