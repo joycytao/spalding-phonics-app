@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { advance, createSession, getPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
+import { advance, advanceExamDecision, createSession, getPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
 
 const phonograms = [
   { id: 1, symbol: 'a' },
@@ -44,4 +44,19 @@ test('adds correct answer to an exam score', () => {
 test('records an incorrect phonogram for review', () => {
   const session = createSession([2], phonograms, 'exam');
   assert.deepEqual(recordExamDecision(session, false).incorrectIds, [2]);
+});
+
+test('advances immediately after an incorrect exam decision', () => {
+  const session = createSession([1, 2], phonograms, 'exam');
+  const next = advanceExamDecision(session, false);
+  assert.equal(next.index, 1);
+  assert.deepEqual(next.incorrectIds, [1]);
+  assert.deepEqual(next.score, { correct: 0, total: 1 });
+});
+
+test('completes the exam immediately after the final decision', () => {
+  const session = createSession([1], phonograms, 'exam');
+  const next = advanceExamDecision(session, true);
+  assert.equal(next.isComplete, true);
+  assert.deepEqual(next.score, { correct: 1, total: 1 });
 });
