@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { playAudio } from '../src/audio.js';
+import { isAudioPlaying, playAudio, stopAudio } from '../src/audio.js';
 
 class FakeAudio {
   static instances = [];
@@ -23,6 +23,10 @@ class FakeAudio {
   play() {
     this.playCalls += 1;
     return Promise.resolve();
+  }
+
+  pause() {
+    this.pauseCalls = (this.pauseCalls ?? 0) + 1;
   }
 
   emit(type) {
@@ -59,4 +63,29 @@ test('rejects when audio playback fails', async () => {
 
   audio.emit('error');
   await assert.rejects(playback, /Audio playback failed/);
+});
+
+test('does not start a second Audio instance while playback is active', async () => {
+  const first = playAudio({ audioPath: 'audio/01-a.mp3' }, { AudioClass: FakeAudio });
+  const firstAudio = FakeAudio.instances.at(-1);
+  const second = playAudio({ audioPath: 'audio/02-b.mp3' }, { AudioClass: FakeAudio });
+
+  assert.equal(second, first);
+  assert.equal(FakeAudio.instances.length, 3);
+  assert.equal(firstAudio.playCalls, 1);
+  assert.equal(isAudioPlaying(), true);
+
+  firstAudio.emit('ended');
+  await first;
+  assert.equal(isAudioPlaying(), false);
+});
+
+test('stopAudio releases the lock and rejects the active playback', async () => {
+  const playback = playAudio({ audioPath: 'audio/01-a.mp3' }, { AudioClass: FakeAudio });
+  const audio = FakeAudio.instances.at(-1);
+
+  stopAudio();
+  await assert.rejects(playback, /cancelled/);
+  assert.equal(audio.pauseCalls, 1);
+  assert.equal(isAudioPlaying(), false);
 });
