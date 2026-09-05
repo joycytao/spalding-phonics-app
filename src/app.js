@@ -1,8 +1,8 @@
 import { playAudio } from './audio.js';
 import { groups, phonograms } from './phonograms.js';
 import { createProgressStore } from './progress-store.js';
-import { advance, createSession, getPracticeNavigationAction, recordExamDecision } from './session.js';
-import { isExamCheckDisabled, isPracticeNextDisabled } from './audio-controls.js';
+import { advance, advanceExamDecision, createSession, getPracticeNavigationAction, recordExamDecision } from './session.js';
+import { isExamCheckDisabled, isPlaybackButtonDisabled, isPracticeNextDisabled } from './audio-controls.js';
 
 const app = document.querySelector('#app');
 const store = createProgressStore(window.localStorage);
@@ -45,9 +45,10 @@ function renderCard() {
   const practiceNavigation = getPracticeNavigationAction(state.session);
   const action = state.heard ? 'replay' : 'listen';
   const label = state.heard ? 'Play again' : 'Listen to sounds';
+  const playbackButtonDisabled = isPlaybackButtonDisabled(state.audioState);
   const nextDisabled = isPracticeNextDisabled(state.audioState);
   const checkDisabled = state.checked || isExamCheckDisabled(state.audioState);
-  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button" data-action="${action}" aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final && practiceNavigation === 'finish' ? `<button class="round-button next" data-action="finish" aria-label="Finish practice">${icon.next}<small>Finish</small></button>` : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
+  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div><button class="listen-button ${playbackButtonDisabled ? 'is-disabled' : ''}" data-action="${action}" ${playbackButtonDisabled ? 'disabled' : ''} aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final ? `<button class="round-button next" data-action="${final && practiceNavigation === 'finish' ? 'finish' : 'next'}" ${nextDisabled ? 'disabled' : ''} aria-label="${final && practiceNavigation === 'finish' ? 'Finish practice' : 'Next phonogram'}">${icon.next}<small>${final && practiceNavigation === 'finish' ? 'Finish' : 'Next'}</small></button>` : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
 }
 
 function renderResult() {
@@ -63,7 +64,7 @@ function renderDecision() {
   const item = state.session.items[state.session.index];
   const dialog = document.createElement('dialog');
   dialog.className = 'decision-dialog';
-  dialog.innerHTML = `<form method="dialog"><p class="step-label">SELF CHECK</p><h2>Did you write <strong>${esc(item.symbol)}</strong>?</h2><p>Choose honestly. Missed sounds will come back in Review.</p><div><button value="incorrect" class="secondary-button">Not yet</button><button value="correct" class="primary-button">Correct</button></div></form>`;
+  dialog.innerHTML = `<form method="dialog"><p class="step-label">SELF CHECK</p><h2>Did you write <strong>${esc(item.symbol)}</strong>?</h2><p>Choose honestly. Missed sounds will come back in Review.</p><div><button value="incorrect" class="secondary-button">No</button><button value="correct" class="primary-button">Correct</button></div></form>`;
   document.body.append(dialog);
   dialog.addEventListener('close', () => { if (dialog.returnValue) decide(dialog.returnValue === 'correct'); dialog.remove(); });
   dialog.showModal();
@@ -88,6 +89,21 @@ async function listen() {
 
 function decide(correct) {
   const item = state.session.items[state.session.index];
+  if (state.session.mode === 'exam') {
+    const next = advanceExamDecision(state.session, correct);
+    if (!correct) store.recordIncorrect(item.id);
+    state = {
+      ...state,
+      session: next,
+      screen: next.isComplete ? 'result' : 'session',
+      heard: false,
+      audioState: 'idle',
+      checked: false,
+      error: ''
+    };
+    render();
+    return;
+  }
   state = { ...state, session: recordExamDecision(state.session, correct), checked: true };
   if (correct && state.session.mode === 'review-exam') store.removeReviewedCorrect(item.id);
   if (!correct) store.recordIncorrect(item.id);
