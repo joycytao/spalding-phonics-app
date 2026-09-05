@@ -37,3 +37,7 @@ export function recordExamDecision(session, isCorrect) {
     incorrectIds: isCorrect ? session.incorrectIds : [...new Set([...session.incorrectIds, current.id])]
   };
 }
+
+export function advanceExamDecision(session, isCorrect) {
+  return advance(recordExamDecision(session, isCorrect));
+}
