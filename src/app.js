@@ -2,9 +2,8 @@ import { playAudio, stopAudio } from './audio.js';
 import { groups, phonograms } from './phonograms.js';
 import { createProgressStore } from './progress-store.js';
 import { advance, createSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, recordExamDecision } from './session.js';
-import { isPlaybackButtonDisabled } from './audio-controls.js';
+import { isExamCheckDisabled, isPlaybackButtonDisabled, isPracticeNextDisabled } from './audio-controls.js';
 import { schedulePracticePlayback, shouldAutoPlayForMode, shouldShowPracticePlaybackControl } from './practice-playback.js';
-import { isExamCheckDisabled, isPracticeNextDisabled } from './audio-controls.js';
 
 const app = document.querySelector('#app');
 const store = createProgressStore(window.localStorage);
