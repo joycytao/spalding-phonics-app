@@ -5,6 +5,10 @@ export function schedulePracticePlayback(play, { delay = PRACTICE_AUTOPLAY_DELAY
   return () => clearTimeout(timer);
 }
 
+export function shouldAutoPlayForMode(mode) {
+  return mode === 'practice' || mode === 'review-practice';
+}
+
 export function shouldShowPracticePlaybackControl(audioState) {
   return audioState === 'complete' || audioState === 'failed';
 }
