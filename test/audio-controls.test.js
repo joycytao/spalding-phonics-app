@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { isExamCheckDisabled, isPracticeNextDisabled } from '../src/audio-controls.js';
+import { isExamCheckDisabled, isPlaybackButtonDisabled, isPracticeNextDisabled } from '../src/audio-controls.js';
 
 test('Practice Next is enabled before playback starts', () => {
   assert.equal(isPracticeNextDisabled('idle'), false);
@@ -32,4 +32,10 @@ test('Exam Check is enabled after playback completes', () => {
 
 test('Exam Check remains disabled after playback fails', () => {
   assert.equal(isExamCheckDisabled('failed'), true);
+});
+
+test('audio playback button is disabled while playback is active', () => {
+  assert.equal(isPlaybackButtonDisabled('idle'), false);
+  assert.equal(isPlaybackButtonDisabled('playing'), true);
+  assert.equal(isPlaybackButtonDisabled('complete'), false);
 });
