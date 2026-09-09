@@ -4,6 +4,7 @@ import { createProgressStore } from './progress-store.js';
 import { advance, advanceExamDecision, createSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, recordExamDecision } from './session.js';
 import { isExamCheckDisabled, isPlaybackButtonDisabled, isPracticeNextDisabled } from './audio-controls.js';
 import { schedulePracticePlayback, shouldAutoPlayForMode, shouldShowPracticePlaybackControl } from './practice-playback.js';
+import { getTestTypeSelection } from './test-types.js';
 
 const app = document.querySelector('#app');
 const store = createProgressStore(window.localStorage);
@@ -26,19 +27,26 @@ function renderShell(content, kicker = 'SOUND STEPS') {
 function renderHome() {
   renderShell(`<div class="home-grid">
     <button class="mode-card practice" data-action="choose-mode" data-mode="practice"><span>01</span><strong>Start Practice</strong><small>See the phonogram and hear its sound.</small></button>
-    <button class="mode-card exam" data-action="choose-mode" data-mode="exam"><span>02</span><strong>Start Exam</strong><small>Listen first, then reveal and self-check.</small></button>
+    <button class="mode-card exam" data-action="choose-test-type"><span>02</span><strong>Start Test</strong><small>Choose WPR or Spelling Tests.</small></button>
     <button class="mode-card review" data-action="start-review"><span>03</span><strong>Review</strong><small>Practice the sounds that need another turn.</small></button>
   </div><p class="footer-note">Built for grown-ups learning alongside kids.</p>`);
 }
 
+function renderTestTypes() {
+  renderShell(`<div class="step"><button class="text-button" data-action="home">← Home</button><p class="step-label">START TEST · TEST TYPE</p><h2>Choose test type</h2><div class="group-list"><button class="group-card" data-action="choose-test-type" data-test-type="wpr"><strong>WPR</strong><span>Listen first, then reveal and self-check.</span><b>→</b></button><button class="group-card" data-action="choose-test-type" data-test-type="spelling"><strong>Spelling Tests</strong><span>Choose phonograms and practice spelling whole words.</span><b>→</b></button></div></div>`);
+}
+
 function renderGroups() {
-  renderShell(`<div class="step"><button class="text-button" data-action="home">← Home</button><p class="step-label">${state.mode === 'exam' ? 'EXAM' : 'PRACTICE'} · STEP 1 OF 2</p><h2>Choose a set</h2><div class="group-list">${groups.map((group) => `<button class="group-card" data-action="choose-group" data-group="${group.id}"><strong>${group.label}</strong><span>${group.detail}</span><b>→</b></button>`).join('')}</div></div>`);
+  renderShell(`<div class="step"><button class="text-button" data-action="home">← Home</button><p class="step-label">${state.mode === 'exam' ? 'WPR' : 'PRACTICE'} · STEP 1 OF 2</p><h2>Choose a set</h2><div class="group-list">${groups.map((group) => `<button class="group-card" data-action="choose-group" data-group="${group.id}"><strong>${group.label}</strong><span>${group.detail}</span><b>→</b></button>`).join('')}</div></div>`);
 }
 
 function renderPicker() {
   const items = groupItems(state.group);
   const checked = new Set(state.selectedIds);
-  renderShell(`<div class="step"><button class="text-button" data-action="groups">← Back</button><p class="step-label">STEP 2 OF 2</p><h2>Choose phonograms</h2><div class="picker-toolbar"><button class="pill" data-action="select-all">${checked.size === items.length ? 'Clear all' : 'Select all'}</button><span>${checked.size} selected</span></div><div class="phonogram-picker">${items.map((item) => `<label class="choice"><input type="checkbox" data-id="${item.id}" ${checked.has(item.id) ? 'checked' : ''}/><span>${item.id}</span><strong>${esc(item.symbol)}</strong></label>`).join('')}</div><button class="primary-button" data-action="start-session" ${checked.size ? '' : 'disabled'}>Start ${state.mode === 'exam' ? 'exam' : 'practice'} <span>→</span></button></div>`);
+  const testLabel = state.mode === 'exam' ? 'WPR' : state.mode === 'spelling-test' ? 'SPELLING TESTS' : 'PRACTICE';
+  const stepLabel = state.mode === 'spelling-test' ? 'STEP 1 OF 1' : 'STEP 2 OF 2';
+  const startLabel = state.mode === 'practice' ? 'Start practice' : 'Start Test';
+  renderShell(`<div class="step"><button class="text-button" data-action="${state.mode === 'spelling-test' ? 'test-types' : 'groups'}">← Back</button><p class="step-label">${testLabel} · ${stepLabel}</p><h2>Choose phonograms</h2><div class="picker-toolbar"><button class="pill" data-action="select-all">${checked.size === items.length ? 'Clear all' : 'Select all'}</button><span>${checked.size} selected</span></div><div class="phonogram-picker">${items.map((item) => `<label class="choice"><input type="checkbox" data-id="${item.id}" ${checked.has(item.id) ? 'checked' : ''}/><span>${item.id}</span><strong>${esc(item.symbol)}</strong></label>`).join('')}</div><button class="primary-button" data-action="start-session" ${checked.size ? '' : 'disabled'}>${startLabel} <span>→</span></button></div>`);
 }
 
 function renderCard() {
@@ -59,7 +67,7 @@ function renderCard() {
 
 function renderResult() {
   const { correct, total } = state.session.score;
-  renderShell(`<div class="result"><p class="step-label">EXAM COMPLETE</p><h2>${correct} / ${total}</h2><p>You finished the set. Choose what comes next.</p><div class="result-actions"><button class="primary-button" data-action="start-review">Review missed sounds <span>→</span></button><button class="secondary-button" data-action="home">Home</button></div></div>`);
+  renderShell(`<div class="result"><p class="step-label">TEST COMPLETE</p><h2>${correct} / ${total}</h2><p>You finished the set. Choose what comes next.</p><div class="result-actions"><button class="primary-button" data-action="start-review">Review missed sounds <span>→</span></button><button class="secondary-button" data-action="home">Home</button></div></div>`);
 }
 
 function renderReviewEmpty() {
@@ -78,6 +86,7 @@ function renderDecision() {
 
 function render() {
   if (state.screen === 'home') return renderHome();
+  if (state.screen === 'test-types') return renderTestTypes();
   if (state.screen === 'groups') return renderGroups();
   if (state.screen === 'picker') return renderPicker();
   if (state.screen === 'session') return renderCard();
@@ -151,8 +160,11 @@ app.addEventListener('click', (event) => {
   const { action } = button.dataset;
   if (action === 'home') { leaveSession(); state = { ...state, screen: 'home' }; render(); }
   if (action === 'choose-mode') { state = { ...state, mode: button.dataset.mode, screen: 'groups' }; render(); }
+  if (action === 'choose-test-type' && !button.dataset.testType) { state = { ...state, screen: 'test-types' }; render(); }
+  if (action === 'choose-test-type' && button.dataset.testType) { state = { ...state, ...getTestTypeSelection(button.dataset.testType, phonograms) }; render(); }
   if (action === 'choose-group') { state = { ...state, group: button.dataset.group, selectedIds: groupItems(button.dataset.group).map((item) => item.id), screen: 'picker' }; render(); }
   if (action === 'groups') { state = { ...state, screen: 'groups' }; render(); }
+  if (action === 'test-types') { state = { ...state, screen: 'test-types' }; render(); }
   if (action === 'select-all') { const ids = groupItems(state.group).map((item) => item.id); state.selectedIds = state.selectedIds.length === ids.length ? [] : ids; render(); }
   if (action === 'start-session') startSession(state.selectedIds, state.mode);
   if (action === 'listen' || action === 'replay') listen();

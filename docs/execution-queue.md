@@ -39,7 +39,7 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 27 | [#68 Update Choose a Set to support phonograms 1-70 only](https://github.com/joycytao/spalding-phonics-app/issues/68) | None | Ready |
 | 28 | [#69 Create phonogram-to-word-list data for spelling tests](https://github.com/joycytao/spalding-phonics-app/issues/69) | None | Ready |
 | 29 | [#70 Generate and integrate audio assets for spelling-test word lists](https://github.com/joycytao/spalding-phonics-app/issues/70) | #69 | Blocked by #69 |
-| 30 | [#71 Rename Start Exam to Start Test and add test-type selection](https://github.com/joycytao/spalding-phonics-app/issues/71) | #68 | Ready after #68; product questions remain in #71 |
+| 30 | [#71 Rename Start Exam to Start Test and add test-type selection](https://github.com/joycytao/spalding-phonics-app/issues/71) | #68 | Ready |
 | 31 | [#72 Implement whole-word playback and behavior for Spelling Tests](https://github.com/joycytao/spalding-phonics-app/issues/72) | #69, #70, #71 | Blocked by #69, #70, and #71 |
 | 32 | [#73 QA end-to-end WPR and Spelling Tests flows for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/73) | #68, #69, #70, #71, #72 | Pending human QA after the new test flows |
 | 33 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50, #53, #60 | Pending human QA after Start Practice behavior |
@@ -49,7 +49,7 @@ An issue is eligible only when every listed dependency is complete and the issue
 
 ## Insertions
 
-The #59–#62 rows are inserted before the existing post-release QA stories because the updated playback contract and mode-specific behavior must be implemented before QA can re-run Start Practice, Start Exam, and Review. The new Review ticket is explicitly blocked on a product decision because the requested final `Finish` action conflicts with the current transition into Review Exam.
+The #59–#62 rows are inserted before the existing post-release QA stories because the updated playback contract and mode-specific behavior must be implemented before QA can re-run Start Practice, WPR, and Review. The new Review ticket is explicitly blocked on a product decision because the requested final `Finish` action conflicts with the current transition into Review WPR.
 
 When a new issue is necessary, insert a row before the first affected dependent issue, state the reason for the insertion, and revise all impacted dependency entries. The agent must then update GitHub issue descriptions and visible ordering references in the same change.
 

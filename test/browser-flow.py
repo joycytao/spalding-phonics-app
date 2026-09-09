@@ -13,9 +13,10 @@ with sync_playwright() as playwright:
     assert page.get_by_text("a", exact=True).is_visible()
 
     page.get_by_role("button", name="Home").click()
-    page.get_by_role("button", name="Start Exam").click()
+    page.get_by_role("button", name="Start Test").click()
+    page.get_by_role("button", name="WPR").click()
     page.get_by_role("button", name="Phonograms 1 to 26").click()
-    page.get_by_role("button", name="Start exam").click()
+    page.get_by_role("button", name="Start Test").click()
     assert page.get_by_text("?", exact=True).is_visible()
     assert not page.get_by_text("a", exact=True).is_visible()
 
