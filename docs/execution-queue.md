@@ -36,10 +36,16 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 24 | [#60 Implement automatic playback and gated controls in Start Practice](https://github.com/joycytao/spalding-phonics-app/issues/60) | #59 | Blocked by #59 |
 | 25 | [#62 Simplify Start Exam check and self-check flow](https://github.com/joycytao/spalding-phonics-app/issues/62) | #59 | Blocked by #59 |
 | 26 | [#61 Implement automatic playback and completion flow in Review](https://github.com/joycytao/spalding-phonics-app/issues/61) | #59 | Blocked by #59 and product decision |
-| 27 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50, #53, #60 | Pending human QA after Start Practice behavior |
-| 28 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #51, #62 | Pending human QA after Start Exam behavior |
-| 29 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18, #61 | Pending human QA after Review behavior |
-| 30 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
+| 27 | [#68 Update Choose a Set to support phonograms 1-70 only](https://github.com/joycytao/spalding-phonics-app/issues/68) | None | Ready |
+| 28 | [#69 Create phonogram-to-word-list data for spelling tests](https://github.com/joycytao/spalding-phonics-app/issues/69) | None | Ready |
+| 29 | [#70 Generate and integrate audio assets for spelling-test word lists](https://github.com/joycytao/spalding-phonics-app/issues/70) | #69 | Blocked by #69 |
+| 30 | [#71 Rename Start Exam to Start Test and add test-type selection](https://github.com/joycytao/spalding-phonics-app/issues/71) | #68 | Ready after #68; product questions remain in #71 |
+| 31 | [#72 Implement whole-word playback and behavior for Spelling Tests](https://github.com/joycytao/spalding-phonics-app/issues/72) | #69, #70, #71 | Blocked by #69, #70, and #71 |
+| 32 | [#73 QA end-to-end WPR and Spelling Tests flows for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/73) | #68, #69, #70, #71, #72 | Pending human QA after the new test flows |
+| 33 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50, #53, #60 | Pending human QA after Start Practice behavior |
+| 34 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #51, #62 | Pending human QA after Start Exam behavior |
+| 35 | [#47 QA Review for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/47) | #18, #61 | Pending human QA after Review behavior |
+| 36 | [#48 QA letter-to-audio mapping for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/48) | #18 | Pending human QA |
 
 ## Insertions
 
@@ -48,3 +54,5 @@ The #59–#62 rows are inserted before the existing post-release QA stories beca
 When a new issue is necessary, insert a row before the first affected dependent issue, state the reason for the insertion, and revise all impacted dependency entries. The agent must then update GitHub issue descriptions and visible ordering references in the same change.
 
 The #50, #51, and #53 rows were inserted before the existing post-release QA stories because they are implementation changes to the Practice and Exam flows. The affected #45 and #46 QA stories now explicitly wait for their corresponding behavior changes; #47 and #48 are unaffected.
+
+The #68–#73 rows were inserted before the existing post-release QA stories because they define the supported 1-70 scope, spelling-test data and audio, the Start Test entry point, and the new Spelling Tests flow. #68 and #69 can start independently; #70 waits for the approved word lists; #71 waits for the 1-70 UI update; #72 waits for the data, audio, and test-type flow; and #73 waits for the complete new flow before end-to-end QA.
