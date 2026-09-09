@@ -13,13 +13,13 @@ V1 is a responsive, single-page web app with no account or backend. It covers an
 - 71-87: advanced/additional phonograms.
 - 1-87: the complete ordered curriculum.
 
-The user starts a session by selecting `Start Practice` or `Start Exam`, choosing one of the above ranges, then choosing all phonograms in that range or individual phonograms. The session follows the selected phonograms in curriculum order.
+The user starts a session by selecting `Start Practice` or `Start Test`. `Start Test` offers `WPR` (the existing phonogram self-check flow) or `Spelling Tests` (the whole-word flow). WPR then asks the user to choose one of the supported phonogram ranges; Spelling Tests goes directly to phonograms 1-70. The session follows the selected phonograms in curriculum order.
 
 ## Home And Review
 
-The home screen provides `Start Practice`, `Start Exam`, and `Review`.
+The home screen provides `Start Practice`, `Start Test`, and `Review`.
 
-`Review` starts a review loop for locally stored incorrect phonograms: practice the queue first, then take an exam on that same queue. If no phonograms are queued, the screen explains that there is nothing to review and offers Home or Start Practice.
+`Review` starts a review loop for locally stored incorrect phonograms: practice the queue first, then take a WPR test on that same queue. If no phonograms are queued, the screen explains that there is nothing to review and offers Home or Start Practice.
 
 ## Practice Flow
 
@@ -27,9 +27,9 @@ Practice shows the current phonogram in a large centered card and a `Listen` con
 
 After the first playback, `Listen` becomes `Play again`. The bottom controls are Home and Next. Next advances in order; it is omitted on the final phonogram. Home ends the session and returns to the main page.
 
-## Exam Flow
+## WPR Test Flow
 
-Exam hides the phonogram until the learner presses `Check`. It still provides Listen and plays the same recorded narration. After the first playback, it provides `Play again`, Home, and Check, with an intentionally reserved Next position so controls remain evenly spaced.
+WPR hides the phonogram until the learner presses `Check`. It still provides Listen and plays the same recorded narration. After the first playback, it provides `Play again`, Home, and Check, with an intentionally reserved Next position so controls remain evenly spaced.
 
 Check reveals the phonogram and opens a self-assessment dialog with Correct and Incorrect choices. Correct increments the score. Incorrect increments the score denominator and adds the phonogram to the local review queue. The dialog closes automatically after a choice. Check is then disabled and Next becomes available. Next is omitted for the last item.
 
