@@ -17,6 +17,5 @@ export const phonograms = phonogramTranscripts.map((transcript) => ({
 export const groups = [
   { id: 'single', label: 'Phonograms 1 to 26', detail: 'Single-letter phonograms' },
   { id: 'multi', label: 'Phonograms 27 to 70', detail: 'Multi-letter phonograms' },
-  { id: 'advanced', label: 'Phonograms 71 to 87', detail: 'Advanced/additional phonograms' },
-  { id: 'all', label: 'Phonograms 1 to 87', detail: 'Complete phonogram sequence' }
+  { id: 'all', label: 'Phonograms 1 to 70', detail: 'Complete supported phonogram sequence' }
 ];

@@ -14,7 +14,9 @@ const icon = { listen: '♪', replay: '↻', home: '⌂', next: '→', check: '�
 const esc = (text) => String(text).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
 
 function groupItems(groupId) {
-  return groupId === 'all' ? phonograms : phonograms.filter((item) => item.group === groupId);
+  return groupId === 'all'
+    ? phonograms.filter((item) => item.id <= 70)
+    : phonograms.filter((item) => item.group === groupId);
 }
 
 function renderShell(content, kicker = 'SOUND STEPS') {
