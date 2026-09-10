@@ -2,4 +2,7 @@
 node_modules/
 audio/*.mp3
 audio/render-manifest.json
+audio/words/*.mp3
+audio/word-audio-manifest.json
 !audio/.gitkeep
+!audio/words/.gitkeep

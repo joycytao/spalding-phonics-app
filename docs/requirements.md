@@ -45,6 +45,8 @@ Audio is generated during authoring with Voicebox and bundled as local MP3 files
 
 Each transcript record must preserve both structured instructional cues and a final approved `ttsText`. Cues include letter count, use restriction, or position, such as `two letters`, `not used`, and `beginning`. The `ttsText` is the only text sent to Voicebox and must combine the phonogram, cues, sounds, and examples in the approved teaching order. For example: `K N. Two letters. /n/ as in knee. Beginning.` Structured cues support review and future UI display; they must not replace the approved narration.
 
+Spelling-test word audio uses the same configured Voicebox profile and production engine. The repeatable `npm run audio:words` command generates deterministic paths under `audio/words/{id}-{phonogram}-{word}.mp3` for phonogram entries whose word-list `reviewStatus` is `approved`; it does not generate audio from pending-review entries. `npm run audio:words:validate` fails if the generated set has missing, duplicate, or orphaned paths. Voicebox credentials and the local API remain authoring-time dependencies and are never exposed to the learner-facing app.
+
 ## Curriculum Data And Sources
 
 Each dataset record includes its number, displayed phonogram, curriculum group, structured instructional cues, final narration text, source URL, and MP3 path. Curriculum data is compiled from public references and must be reviewed for instructional accuracy before audio files are considered final.
