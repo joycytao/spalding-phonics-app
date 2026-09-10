@@ -1,10 +1,11 @@
 import { playAudio, stopAudio } from './audio.js';
 import { groups, phonograms } from './phonograms.js';
 import { createProgressStore } from './progress-store.js';
-import { advance, advanceExamDecision, createSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, recordExamDecision } from './session.js';
+import { advance, advanceExamDecision, createSession, createSpellingSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, recordExamDecision } from './session.js';
 import { isExamCheckDisabled, isPlaybackButtonDisabled, isPracticeNextDisabled } from './audio-controls.js';
 import { schedulePracticePlayback, shouldAutoPlayForMode, shouldShowPracticePlaybackControl } from './practice-playback.js';
 import { getTestTypeSelection } from './test-types.js';
+import wordListCatalog from '../data/phonogram-word-lists.json' with { type: 'json' };
 
 const app = document.querySelector('#app');
 const store = createProgressStore(window.localStorage);
@@ -52,7 +53,9 @@ function renderPicker() {
 function renderCard() {
   const item = state.session.items[state.session.index];
   const isExam = state.session.mode === 'exam' || state.session.mode === 'review-exam';
-  const shown = !isExam || state.checked;
+  const isSpelling = state.session.mode === 'spelling-test';
+  const isAssessment = isExam || isSpelling;
+  const shown = isSpelling ? state.checked : !isExam || state.checked;
   const final = state.session.index === state.session.items.length - 1;
   const practiceNavigation = getPracticeNavigationAction(state.session);
   const isPractice = state.session.mode === 'practice';
@@ -62,7 +65,9 @@ function renderCard() {
   const playbackButtonDisabled = isPlaybackButtonDisabled(state.audioState);
   const nextDisabled = isPracticeNextDisabled(state.audioState);
   const checkDisabled = state.checked || isExamCheckDisabled(state.audioState);
-  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">PHONOGRAM ${item.id}</span><div class="symbol">${shown ? esc(item.symbol) : '<span class="question-mark">?</span>'}</div>${showPlaybackControl ? `<button class="listen-button ${playbackButtonDisabled ? 'is-disabled' : ''}" data-action="${action}" ${playbackButtonDisabled ? 'disabled' : ''} aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>` : ''}${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isExam ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isExam ? (final && practiceNavigation === 'finish' ? `<button class="round-button next" data-action="finish" ${nextDisabled ? 'disabled' : ''} aria-label="Finish practice">${icon.next}<small>Finish</small></button>` : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
+  const displayedAnswer = isSpelling ? item.word : item.symbol;
+  const cardLabel = isSpelling ? 'WORD' : 'PHONOGRAM';
+  renderShell(`<div class="session"><div class="progress"><span>${state.session.index + 1} / ${state.session.items.length}</span><i style="width:${((state.session.index + 1) / state.session.items.length) * 100}%"></i></div><section class="sound-card ${shown ? 'shown' : 'hidden-answer'}"><span class="card-number">${cardLabel} ${item.id}</span><div class="symbol">${shown && displayedAnswer ? esc(displayedAnswer) : '<span class="question-mark">?</span>'}</div>${showPlaybackControl ? `<button class="listen-button ${playbackButtonDisabled ? 'is-disabled' : ''}" data-action="${action}" ${playbackButtonDisabled ? 'disabled' : ''} aria-label="${label}"><span>${icon[state.heard ? 'replay' : 'listen']}</span>${label}</button>` : ''}${state.error ? `<p class="audio-error">${esc(state.error)}</p>` : ''}</section><nav class="session-nav"><button class="round-button" data-action="home" aria-label="Home">${icon.home}<small>Home</small></button>${isAssessment ? `<button class="round-button ${checkDisabled ? 'is-disabled' : ''}" data-action="check" ${checkDisabled ? 'disabled' : ''} aria-label="Check answer">${icon.check}<small>Check</small></button>` : '<span class="nav-spacer"></span>'}${state.checked || !isAssessment ? (final && practiceNavigation === 'finish' ? `<button class="round-button next" data-action="finish" ${nextDisabled ? 'disabled' : ''} aria-label="Finish practice">${icon.next}<small>Finish</small></button>` : `<button class="round-button next" data-action="next" ${nextDisabled ? 'disabled' : ''} aria-label="Next phonogram">${icon.next}<small>Next</small></button>`) : '<span class="nav-spacer"></span>'}</nav></div>`);
 }
 
 function renderResult() {
@@ -78,7 +83,8 @@ function renderDecision() {
   const item = state.session.items[state.session.index];
   const dialog = document.createElement('dialog');
   dialog.className = 'decision-dialog';
-  dialog.innerHTML = `<form method="dialog"><p class="step-label">SELF CHECK</p><h2>Did you write <strong>${esc(item.symbol)}</strong>?</h2><p>Choose honestly. Missed sounds will come back in Review.</p><div><button value="incorrect" class="secondary-button">No</button><button value="correct" class="primary-button">Correct</button></div></form>`;
+  const answer = state.session.mode === 'spelling-test' ? item.word : item.symbol;
+  dialog.innerHTML = `<form method="dialog"><p class="step-label">SELF CHECK</p><h2>Did you write <strong>${esc(answer ?? 'the word')}</strong>?</h2><p>Choose honestly. Missed sounds will come back in Review.</p><div><button value="incorrect" class="secondary-button">No</button><button value="correct" class="primary-button">Correct</button></div></form>`;
   document.body.append(dialog);
   dialog.addEventListener('close', () => { if (dialog.returnValue) decide(dialog.returnValue === 'correct'); dialog.remove(); });
   dialog.showModal();
@@ -97,6 +103,11 @@ function render() {
 async function listen() {
   if (state.audioState === 'playing') return;
   const item = state.session.items[state.session.index];
+  if (!item.audioPath) {
+    state = { ...state, heard: true, audioState: 'failed', error: 'This word is not ready yet. An approved word list and Voicebox audio are required.' };
+    render();
+    return;
+  }
   state = { ...state, audioState: 'playing', error: '' };
   render();
   try { await playAudio(item); state = { ...state, heard: true, audioState: 'complete', error: '' }; } catch { state = { ...state, heard: true, audioState: 'failed', error: 'Audio is not ready yet. Generate the Voicebox files, then try again.' }; }
@@ -127,7 +138,8 @@ function decide(correct) {
 }
 
 function startSession(ids, mode) {
-  state = { screen: 'session', mode, group: null, selectedIds: ids, session: createSession(ids, phonograms, mode), heard: false, audioState: 'idle', checked: false, error: '' };
+  const session = mode === 'spelling-test' ? createSpellingSession(ids, phonograms, wordListCatalog) : createSession(ids, phonograms, mode);
+  state = { screen: 'session', mode, group: null, selectedIds: ids, session, heard: false, audioState: 'idle', checked: false, error: '' };
   render();
   schedulePracticeAutoPlay();
 }

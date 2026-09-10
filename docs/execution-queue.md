@@ -40,7 +40,7 @@ An issue is eligible only when every listed dependency is complete and the issue
 | 28 | [#69 Create phonogram-to-word-list data for spelling tests](https://github.com/joycytao/spalding-phonics-app/issues/69) | None | Ready |
 | 29 | [#70 Generate and integrate audio assets for spelling-test word lists](https://github.com/joycytao/spalding-phonics-app/issues/70) | #69 | Blocked by #69 |
 | 30 | [#71 Rename Start Exam to Start Test and add test-type selection](https://github.com/joycytao/spalding-phonics-app/issues/71) | #68 | Ready |
-| 31 | [#72 Implement whole-word playback and behavior for Spelling Tests](https://github.com/joycytao/spalding-phonics-app/issues/72) | #69, #70, #71 | Blocked by #69, #70, and #71 |
+| 31 | [#72 Implement whole-word playback and behavior for Spelling Tests](https://github.com/joycytao/spalding-phonics-app/issues/72) | #69, #70, #71 | In progress — PR pending |
 | 32 | [#73 QA end-to-end WPR and Spelling Tests flows for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/73) | #68, #69, #70, #71, #72 | Pending human QA after the new test flows |
 | 33 | [#45 QA Start Practice for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/45) | #18, #50, #53, #60 | Pending human QA after Start Practice behavior |
 | 34 | [#46 QA Start Exam for phonograms 1-70](https://github.com/joycytao/spalding-phonics-app/issues/46) | #18, #51, #62 | Pending human QA after Start Exam behavior |

@@ -3,6 +3,35 @@ export function orderedSelection(ids, phonograms) {
   return phonograms.filter((item) => selected.has(item.id));
 }
 
+export function chooseSpellingWord(words, previousWord, random = Math.random) {
+  if (!words.length) return null;
+  const candidates = words.length > 1 ? words.filter((word) => word !== previousWord) : words;
+  return candidates[Math.min(candidates.length - 1, Math.floor(random() * candidates.length))];
+}
+
+export function createSpellingSession(ids, phonograms, wordListCatalog, random = Math.random) {
+  let previousWord = null;
+  const items = orderedSelection(ids, phonograms).map((item) => {
+    const entry = wordListCatalog.phonograms.find((candidate) => candidate.id === item.id);
+    const words = entry?.reviewStatus === 'approved' && Array.isArray(entry.words) ? entry.words : [];
+    const word = chooseSpellingWord(words, previousWord, random);
+    previousWord = word;
+    return {
+      ...item,
+      word: word ?? null,
+      audioPath: word ? `audio/words/${String(item.id).padStart(2, '0')}-${item.symbol.toLowerCase()}-${word.toLowerCase()}.mp3` : null
+    };
+  });
+  return {
+    mode: 'spelling-test',
+    items,
+    index: 0,
+    isComplete: false,
+    score: { correct: 0, total: 0 },
+    incorrectIds: []
+  };
+}
+
 export function createSession(ids, phonograms, mode) {
   return {
     mode,
