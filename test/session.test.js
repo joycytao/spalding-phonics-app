@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { advance, advanceExamDecision, createSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
+import { advance, advanceExamDecision, chooseSpellingWord, createSession, createSpellingSession, getPracticeNavigationAction, getReviewPracticeNavigationAction, orderedSelection, recordExamDecision } from '../src/session.js';
 
 const phonograms = [
   { id: 1, symbol: 'a' },
@@ -10,6 +10,24 @@ const phonograms = [
 
 test('orders a custom selection by curriculum number', () => {
   assert.deepEqual(orderedSelection([3, 1], phonograms).map((item) => item.id), [1, 3]);
+});
+
+test('avoids the immediately previous spelling word when alternatives exist', () => {
+  assert.equal(chooseSpellingWord(['cat', 'cot'], 'cat', () => 0), 'cot');
+  assert.equal(chooseSpellingWord(['cat'], 'cat', () => 0), 'cat');
+});
+
+test('creates spelling prompts from approved words and safe missing-data items', () => {
+  const catalog = { phonograms: [
+    { id: 1, reviewStatus: 'approved', words: ['apple', 'apron'] },
+    { id: 2, reviewStatus: 'pending_review', words: ['bat', 'boat'] }
+  ] };
+  const session = createSpellingSession([1, 2], phonograms, catalog, () => 0);
+  assert.equal(session.mode, 'spelling-test');
+  assert.equal(session.items[0].word, 'apple');
+  assert.equal(session.items[0].audioPath, 'audio/words/01-a-apple.mp3');
+  assert.equal(session.items[1].word, null);
+  assert.equal(session.items[1].audioPath, null);
 });
 
 test('does not advance past the final phonogram', () => {
