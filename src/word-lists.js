@@ -45,3 +45,9 @@ export function validateWordListCatalog(catalog) {
 
   return catalog;
 }
+
+export function getWordAudioPath(entry, word) {
+  const symbol = entry.symbol.toLowerCase();
+  const normalizedWord = word.toLowerCase();
+  return `audio/words/${String(entry.id).padStart(2, '0')}-${symbol}-${normalizedWord}.mp3`;
+}

@@ -5,6 +5,8 @@
   "scripts": {
     "test": "node --test",
     "audio:qa:review": "node scripts/generate-audio-qa-review.mjs",
+    "audio:words": "node scripts/generate-word-audio.mjs",
+    "audio:words:validate": "node scripts/validate-word-audio.mjs",
     "transcript:review:summary": "node scripts/generate-transcript-review-summary.mjs",
     "voicebox:preflight": "node scripts/voicebox-preflight.mjs",
     "audio:pilot:ew": "node scripts/generate-ew-pilot.mjs"
